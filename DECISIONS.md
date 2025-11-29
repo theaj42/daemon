@@ -181,6 +181,37 @@ exploratory:
 
 ---
 
+## Decision 008: Separate Repo vs AI-assistant Monorepo
+
+**Date**: 2025-11-29
+
+**Context**: Should daemon live in ~/git/daemon/ or ~/AI-assistant/projects/daemon/?
+
+**Decision**: Keep as separate repo in ~/git/daemon/
+
+**Reasoning**:
+- UNIX philosophy: solve one problem well, compose via interfaces
+- Deployment isolation: daemon deploys to Cloudflare independently
+- Failure isolation: broken AI-assistant commit doesn't break daemon
+- Monolith concern: AI-assistant already has 41 root items, adding more makes it unwieldy
+
+**Important Nuance** (for future reference):
+The pattern is NOT as clean as "deployed services go in ~/git/, explorations go in ~/AI-assistant/projects/". Reality is messier:
+
+- Some MCP servers ARE in ~/AI-assistant/engine/mcp-servers/ (e.g., chromadb-server)
+- Some MCP servers ARE in ~/git/ as standalone repos (e.g., exif-mcp-server, instacart-mcp-server)
+- The choice depends on: deployment needs, coupling to AI-assistant context, whether others might use it
+
+**Why daemon specifically goes in ~/git/:**
+- Deploys to Cloudflare Workers (external hosting)
+- TypeScript/Bun stack (different from AI-assistant's Python)
+- Could become a reference implementation others look at
+- Primary discoverability URL is daemon.ajvanbeest.com anyway
+
+**Not a universal rule** - future projects should be evaluated case-by-case.
+
+---
+
 ## Pending Decisions
 
 ### What else goes in Trusted tier?
