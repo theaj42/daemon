@@ -107,13 +107,13 @@ Client (browser, AI assistant, MCP client)
 
 ## Timeline
 
-| Phase | Deliverable | Target |
+| Phase | Deliverable | Status |
 |-------|-------------|--------|
-| 1 | Data schema design | Today |
-| 2 | Cloudflare setup | This weekend |
-| 3 | Worker implementation | Next week |
-| 4 | Data population | Next week |
-| 5 | Blog post | Within 2 weeks |
+| 1 | Data schema design | ✅ Complete (2025-11-29) |
+| 2 | Cloudflare setup | Next |
+| 3 | Worker implementation | Pending |
+| 4 | Data population (fill TODOs) | Pending |
+| 5 | Blog post | Pending |
 
 ## Out of Scope (for now)
 
@@ -125,11 +125,19 @@ Client (browser, AI assistant, MCP client)
 
 ## Open Questions
 
-1. What else belongs in trusted tier?
-2. How to handle data freshness (staleness warnings)?
-3. Should there be rate limiting on public endpoints?
-4. How to announce/publicize the daemon for discovery?
+1. How to handle data freshness (staleness warnings)?
+2. Should there be rate limiting on public endpoints?
+3. How to announce/publicize the daemon for discovery?
+4. Where to pull media data from (books/movies)?
+
+## Resolved Questions
+
+- **Trusted tier contents**: current_focus, location, availability, projects_detailed
+- **Access model**: Two-tier (public + trusted) with API key auth
+- **Hosting**: Cloudflare Workers (not GitHub Pages)
+- **Repo location**: Separate ~/git/daemon repo (UNIX philosophy)
 
 ---
 
 *Created: 2025-11-29*
+*Last Updated: 2025-11-29*

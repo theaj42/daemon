@@ -214,21 +214,28 @@ The pattern is NOT as clean as "deployed services go in ~/git/, explorations go 
 
 ## Pending Decisions
 
-### What else goes in Trusted tier?
-- Current focus (from session logs) - likely yes
-- Availability/scheduling - likely yes
-- Contact preferences - TBD
-- Active projects with detail - TBD
-
 ### Data update mechanism
-- Manual updates vs automated
-- Voice note ingestion (like Miessler)
-- Hook into session logging?
+- Manual updates vs automated?
+- Voice note ingestion (like Miessler)?
+- Hook into session logging for current_focus auto-update?
 
 ### Daemon registry / discovery
 - How do others find your daemon?
-- Is there a central registry?
+- Is there a central registry emerging?
 - Link from website, LinkedIn, conference bios?
+
+### Media tracking source
+- Where to pull books/movies from? (Letterboxd, Goodreads, manual?)
+- How frequently to update?
+
+---
+
+## Resolved (Implemented)
+
+- **Trusted tier contents**: Decided and implemented in trusted.yaml
+  - current_focus, location, availability, projects_detailed
+- **Skills framing**: Professional vs Exploratory split with honest context
+- **Repo location**: ~/git/daemon (separate repo, UNIX philosophy)
 
 ---
 
