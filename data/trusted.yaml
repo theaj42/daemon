@@ -1,0 +1,85 @@
+# Daemon Trusted Tier Data
+# This data requires authentication - for people you know
+#
+# Last Updated: 2025-11-29
+# This file should be updated more frequently than public.yaml
+
+current_focus:
+  today: |
+    Building personal daemon API - designing data schema, setting up
+    Cloudflare Workers infrastructure, planning blog post.
+
+  this_week:
+    - "Get daemon MVP deployed to daemon.ajvanbeest.com"
+    - "Write blog post about the daemon build process"
+    - "Continue voice interface refinement"
+
+  active_projects:
+    - name: "Daemon"
+      status: "Building data schema and infrastructure"
+      next_steps:
+        - "Deploy to Cloudflare Workers"
+        - "Test MCP integration"
+        - "Publish blog post"
+
+    - name: "Voice Interface"
+      status: "Core complete, testing in daily workflow"
+      next_steps:
+        - "Add speak alias to .zshrc"
+        - "Consider launchd plist for auto-start"
+
+    - name: "Morning Pages Transcription"
+      status: "Testing Gemini as alternative to Claude"
+      blockers:
+        - "Need to set up personal GCP project for Gemini 3 Pro access"
+
+  last_updated: "2025-11-29T10:00:00-06:00"
+
+location:
+  region: "Greater Chicago Area"
+  city: "St. Charles, Illinois"
+  timezone: "America/Chicago"
+  travel_status: home
+  # travel_until: null  # Uncomment when traveling
+
+availability:
+  open_to_calls: true
+  preferred_contact: linkedin
+  best_times: "Weekday mornings (9-11 AM CT) or by appointment"
+  response_time: "Usually within 24-48 hours"
+
+projects_detailed:
+  - name: "Daemon"
+    status: "active - building MVP"
+    description: |
+      Personal API inspired by Daniel Miessler's daemon concept.
+      Two-tier access (public/trusted) for privacy-conscious implementation.
+      Cloudflare Workers + KV for deployment.
+    blockers: []
+    recent_progress: |
+      Set up project infrastructure, designed data schema, created
+      decision log for blog post.
+    help_wanted: "Feedback on the approach, connections to others building similar systems"
+
+  - name: "Personal AI Infrastructure"
+    status: "active - ongoing refinement"
+    description: |
+      Core AI context system with 6 production-ready agents, ChromaDB
+      memory, session logging, voice interface.
+    blockers: []
+    recent_progress: |
+      Added Claude Code hooks (session-start, bash-audit, voice-output).
+      Created custom subagents (code-reviewer, test-generator, session-synthesizer).
+    help_wanted: null
+
+  - name: "Morning Pages Transcription"
+    status: "active - testing alternatives"
+    description: |
+      Handwritten journal transcription. Claude quality stuck at ~53%
+      due to model bias. Testing Gemini as alternative.
+    blockers:
+      - "Gemini 3 Pro requires paid GCP project (free tier quota=0)"
+    recent_progress: "Added Gemini transcriber support, tested multiple models"
+    help_wanted: null
+
+  # TODO: Add more detailed project info as desired

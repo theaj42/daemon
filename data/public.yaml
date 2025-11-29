@@ -1,0 +1,163 @@
+# Daemon Public Tier Data
+# This data is queryable by anyone without authentication
+#
+# Last Updated: 2025-11-29
+# TODO items marked for your review/completion
+
+about:
+  name: "A.J. Van Beest"
+
+  tagline: "I build robots to fight cybercrime."
+
+  bio: |
+    Security professional who builds automation to fight cybercrime.
+    Also exploring the intersection of AI and security operations -
+    experimenting with personal AI infrastructure, agentic systems, and
+    what happens when you give Claude Code too much freedom.
+
+  links:
+    website: "https://ajvanbeest.com"
+    github: "https://github.com/theaj42"
+    linkedin: "https://linkedin.com/in/ajvanbeest"
+    daemon: "https://daemon.ajvanbeest.com"
+
+  certifications:
+    - "CISSP"
+    - "GWAPT (GIAC Web Application Penetration Tester)"
+    - "GPEN (GIAC Penetration Tester)"
+    - "GSEC (GIAC Security Essentials)"
+
+projects:
+  # Active public projects
+  - name: "Personal AI Infrastructure"
+    status: active
+    description: "Privacy-first AI context system with self-contained agents and local memory"
+    tags: ["ai", "claude-code", "privacy", "automation"]
+    url: "https://github.com/theaj42/AI-assistant"
+
+  - name: "Daemon"
+    status: active
+    description: "This personal API - machine-readable identity for the AI age"
+    tags: ["api", "mcp", "personal-data", "cloudflare"]
+    url: "https://github.com/theaj42/daemon"
+
+  - name: "Voice Interface"
+    status: complete
+    description: "Local text-to-speech with Kokoro/Piper for Claude Code voice output"
+    tags: ["voice", "tts", "local-first", "privacy"]
+
+  - name: "Morning Pages Automation"
+    status: active
+    description: "Handwritten journal to digital text pipeline using AI transcription"
+    tags: ["automation", "journaling", "ocr"]
+    url: "https://github.com/theaj42/morning-pages-automation"
+
+  - name: "News Dashboard"
+    status: active
+    description: "Multi-agent news aggregation with attention-based scoring"
+    tags: ["news", "agents", "rss"]
+
+  # TODO: Add more public projects as desired
+  # Consider: Which projects from manifest.yaml should be public?
+
+skills:
+  professional:
+    - domain: "Security Operations"
+      specifics:
+        - "Vulnerability management"
+        - "SIEM administration and tuning"
+        - "Security automation"
+        - "Penetration testing"
+      proficiency: expert
+
+    - domain: "Automation & Integration"
+      specifics:
+        - "Python scripting"
+        - "API integration"
+        - "Workflow automation"
+        - "n8n/orchestration tools"
+      proficiency: expert
+
+  exploratory:
+    - domain: "AI Infrastructure"
+      specifics:
+        - "Claude Code automation"
+        - "MCP servers"
+        - "Agentic systems"
+        - "Local LLM deployment"
+      context: |
+        Building personal AI systems with an experimental, learning-focused approach.
+        Not production security consulting - this is where I tinker and explore.
+
+    - domain: "AI + Security Intersection"
+      specifics:
+        - "LLM-assisted security operations"
+        - "Automated threat analysis"
+        - "AI-powered vulnerability triage"
+      context: |
+        Exploring how AI can augment security work. Professional security background
+        meets personal AI experimentation. Lots of "it depends" in this space.
+
+interests:
+  - topic: "Agentic AI Systems"
+    why: "Fascinated by autonomous AI that can plan and execute multi-step tasks"
+    tags: ["ai", "agents", "automation"]
+
+  - topic: "Privacy-First Computing"
+    why: "Believe in local-first, user-controlled AI infrastructure"
+    tags: ["privacy", "local-first", "self-hosted"]
+
+  - topic: "Sailing"
+    why: "Long-term dream of Watertribe Everglades Challenge and Race to Alaska"
+    tags: ["sailing", "adventure", "outdoors"]
+
+  - topic: "Making & Building"
+    why: "Builder at heart - physical and digital projects"
+    tags: ["maker", "diy", "building"]
+
+  - topic: "Writing"
+    why: "Morning pages practice, thinking through writing"
+    tags: ["writing", "journaling", "thinking"]
+
+  # TODO: Add more interests as desired
+
+looking_for:
+  - type: "Conference Speaking"
+    description: "Opportunities to present on AI infrastructure, automation, or security topics"
+    context: "Building toward 2026 conference speaker path"
+
+  - type: "Collaboration"
+    description: "Others building personal AI infrastructure or daemon-like systems"
+    context: "Interested in connecting with the small community exploring these ideas"
+
+  - type: "Conversation"
+    description: "Discussions about the AI + security intersection"
+    context: "Happy to share what I'm learning, hear what others are exploring"
+
+  # TODO: Refine or expand as priorities evolve
+
+media:
+  currently_reading:
+    # TODO: What are you currently reading?
+    - title: "[Add current book]"
+      author: "[Author]"
+
+  recently_read:
+    # TODO: Add recent books
+    # Example:
+    # - title: "The Real Internet of Things"
+    #   author: "Daniel Miessler"
+    #   rating: 4
+    []
+
+  currently_watching:
+    # TODO: Any current series/shows?
+    []
+
+  recently_watched:
+    # TODO: Recent movies - could pull from Letterboxd if you use it
+    # Example:
+    # - title: "Movie Name"
+    #   type: movie
+    #   rating: 4
+    []

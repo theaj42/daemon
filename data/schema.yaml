@@ -1,0 +1,243 @@
+# Daemon Data Schema
+# Defines the structure for public and trusted tier data
+#
+# Design Principles:
+# - Public tier: discoverable, professional, non-sensitive
+# - Trusted tier: context for known contacts, location, current state
+# - Honest about the intersection of interests without overclaiming expertise
+
+schema_version: "1.0"
+last_updated: "2025-11-29"
+
+# =============================================================================
+# PUBLIC TIER
+# Anyone can query these endpoints without authentication
+# =============================================================================
+
+public:
+  about:
+    description: "Core professional identity"
+    fields:
+      name:
+        type: string
+        required: true
+        description: "Display name"
+
+      tagline:
+        type: string
+        required: true
+        description: "One-liner professional identity"
+
+      bio:
+        type: string
+        required: true
+        description: "2-3 sentence professional bio with nuance"
+
+      links:
+        type: object
+        fields:
+          website: { type: url }
+          github: { type: url }
+          linkedin: { type: url }
+          daemon: { type: url, description: "This API" }
+
+      certifications:
+        type: array
+        items: string
+        description: "Professional certifications"
+
+  projects:
+    description: "What I'm building - public projects only"
+    fields:
+      items:
+        type: array
+        items:
+          name: { type: string, required: true }
+          status: { type: enum, values: [active, complete, paused, exploring] }
+          description: { type: string }
+          tags: { type: array, items: string }
+          url: { type: url, optional: true }
+          public: { type: boolean, default: true }
+
+  skills:
+    description: "What I can help with"
+    fields:
+      professional:
+        type: array
+        description: "Areas of professional expertise"
+        items:
+          domain: { type: string }
+          specifics: { type: array, items: string }
+          proficiency: { type: enum, values: [expert, proficient, learning] }
+
+      exploratory:
+        type: array
+        description: "Areas I'm actively learning/experimenting with"
+        items:
+          domain: { type: string }
+          specifics: { type: array, items: string }
+          context: { type: string, description: "Honest framing of experience level" }
+
+  interests:
+    description: "Topics I care about"
+    fields:
+      items:
+        type: array
+        items:
+          topic: { type: string }
+          why: { type: string, optional: true }
+          tags: { type: array, items: string }
+
+  looking_for:
+    description: "What I'm seeking - collaboration opportunities"
+    fields:
+      items:
+        type: array
+        items:
+          type: { type: string }
+          description: { type: string }
+          context: { type: string, optional: true }
+
+  media:
+    description: "Cultural consumption - books, movies, etc."
+    fields:
+      currently_reading:
+        type: array
+        items:
+          title: { type: string }
+          author: { type: string }
+          started: { type: date, optional: true }
+
+      recently_read:
+        type: array
+        items:
+          title: { type: string }
+          author: { type: string }
+          finished: { type: date, optional: true }
+          rating: { type: integer, min: 1, max: 5, optional: true }
+
+      recently_watched:
+        type: array
+        description: "Movies and notable TV"
+        items:
+          title: { type: string }
+          type: { type: enum, values: [movie, series, documentary] }
+          rating: { type: integer, min: 1, max: 5, optional: true }
+
+      currently_watching:
+        type: array
+        items:
+          title: { type: string }
+          type: { type: enum, values: [movie, series, documentary] }
+
+# =============================================================================
+# TRUSTED TIER
+# Requires authentication - for people I know
+# =============================================================================
+
+trusted:
+  current_focus:
+    description: "What I'm actively working on right now"
+    fields:
+      active_projects:
+        type: array
+        description: "Projects with current attention"
+        items:
+          name: { type: string }
+          status: { type: string }
+          blockers: { type: array, items: string, optional: true }
+          next_steps: { type: array, items: string, optional: true }
+
+      today:
+        type: string
+        description: "Brief description of today's focus"
+
+      this_week:
+        type: array
+        description: "Week's priorities"
+        items: string
+
+      last_updated:
+        type: datetime
+        description: "When this was last refreshed"
+
+  location:
+    description: "Where I am"
+    fields:
+      region:
+        type: string
+        description: "General area (e.g., 'Greater Chicago Area')"
+
+      city:
+        type: string
+        description: "Specific city"
+
+      timezone:
+        type: string
+        description: "IANA timezone"
+
+      travel_status:
+        type: enum
+        values: [home, traveling, remote]
+
+      travel_until:
+        type: date
+        optional: true
+        description: "If traveling, when returning"
+
+  availability:
+    description: "Scheduling and contact preferences"
+    fields:
+      open_to_calls:
+        type: boolean
+        description: "Currently accepting call requests"
+
+      preferred_contact:
+        type: enum
+        values: [email, linkedin, text, call]
+
+      best_times:
+        type: string
+        description: "General availability windows"
+
+      response_time:
+        type: string
+        description: "Typical response cadence"
+
+  projects_detailed:
+    description: "Full project information including WIP"
+    fields:
+      items:
+        type: array
+        items:
+          name: { type: string }
+          status: { type: string }
+          description: { type: string }
+          blockers: { type: array, items: string }
+          recent_progress: { type: string }
+          help_wanted: { type: string, optional: true }
+
+# =============================================================================
+# METADATA
+# =============================================================================
+
+metadata:
+  daemon_version: "0.1.0"
+  schema_version: "1.0"
+  owner: "A.J. Van Beest"
+  contact: "via LinkedIn or website"
+  mcp_compatible: true
+  endpoints:
+    public:
+      - "/about"
+      - "/projects"
+      - "/skills"
+      - "/interests"
+      - "/looking_for"
+      - "/media"
+      - "/all"
+    trusted:
+      - "/current_focus"
+      - "/location"
+      - "/availability"
+      - "/projects/detailed"
