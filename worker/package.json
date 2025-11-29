@@ -1,0 +1,21 @@
+{
+  "name": "daemon-worker",
+  "version": "1.0.0",
+  "description": "Personal daemon API - machine-readable identity for the AI age",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "build-data": "node scripts/build-data.js",
+    "tail": "wrangler tail"
+  },
+  "keywords": ["daemon", "personal-api", "cloudflare-workers", "mcp"],
+  "author": "A.J. Van Beest",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.51.0"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.1"
+  }
+}

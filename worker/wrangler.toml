@@ -1,0 +1,23 @@
+# Daemon Worker Configuration
+# Personal API - daemon.ajvanbeest.com
+
+name = "daemon"
+main = "src/index.js"
+compatibility_date = "2024-11-29"
+
+# Custom domain (configure after first deploy)
+# routes = [
+#   { pattern = "daemon.ajvanbeest.com", custom_domain = true }
+# ]
+
+# Environment variables
+[vars]
+DAEMON_VERSION = "1.0.0"
+
+# Trusted tier API key (set via `wrangler secret put TRUSTED_API_KEY`)
+# TRUSTED_API_KEY = "set-via-wrangler-secret"
+
+# Development settings
+[dev]
+port = 8787
+local_protocol = "http"
