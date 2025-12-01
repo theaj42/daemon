@@ -159,39 +159,242 @@ async function handleMcpRequest(request) {
   return jsonResponse({ jsonrpc: '2.0', id, result });
 }
 
+// Gruvbox Material Dark color palette
+const colors = {
+  bg: '#1d2021',
+  bg0: '#282828',
+  bg1: '#3c3836',
+  bg2: '#504945',
+  fg: '#ebdbb2',
+  fg0: '#fbf1c7',
+  gray: '#928374',
+  red: '#fb4934',
+  green: '#b8bb26',
+  yellow: '#fabd2f',
+  blue: '#83a598',
+  purple: '#d3869b',
+  aqua: '#8ec07c',
+  orange: '#fe8019',
+};
+
 // Landing page HTML
 const landingPage = `<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Daemon MCP Server</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCP Server | Daemon</title>
   <style>
-    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
-    h1 { color: #333; }
-    code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; }
-    pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
-    .tool { margin: 10px 0; padding: 10px; background: #f9f9f9; border-radius: 5px; }
-    .tool-name { font-weight: bold; color: #0066cc; }
+    :root {
+      --bg: ${colors.bg};
+      --bg0: ${colors.bg0};
+      --bg1: ${colors.bg1};
+      --bg2: ${colors.bg2};
+      --fg: ${colors.fg};
+      --fg0: ${colors.fg0};
+      --gray: ${colors.gray};
+      --red: ${colors.red};
+      --green: ${colors.green};
+      --yellow: ${colors.yellow};
+      --blue: ${colors.blue};
+      --purple: ${colors.purple};
+      --aqua: ${colors.aqua};
+      --orange: ${colors.orange};
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { color: var(--aqua); text-decoration: underline; }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: var(--bg0);
+      border-bottom: 1px solid var(--bg2);
+    }
+
+    nav .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--purple);
+    }
+
+    nav .links a {
+      margin-left: 1.5rem;
+      color: var(--fg);
+    }
+
+    nav .links a:hover { color: var(--aqua); }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .badge-mcp { background: var(--purple); color: var(--bg); }
+    .badge-live { background: var(--green); color: var(--bg); }
+
+    h1 { color: var(--fg0); font-size: 2.5rem; margin-bottom: 0.5rem; }
+    h2 { color: var(--yellow); font-size: 1.5rem; margin: 2rem 0 1rem; border-bottom: 1px solid var(--bg2); padding-bottom: 0.5rem; }
+
+    .tagline { color: var(--gray); font-size: 1.1rem; margin-bottom: 1.5rem; }
+
+    .card {
+      background: var(--bg0);
+      border: 1px solid var(--bg2);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    pre {
+      background: var(--bg0);
+      border: 1px solid var(--bg2);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      font-size: 0.9rem;
+    }
+
+    code {
+      background: var(--bg1);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      color: var(--aqua);
+    }
+
+    pre code { background: none; padding: 0; }
+
+    .tool {
+      display: flex;
+      align-items: flex-start;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      background: var(--bg0);
+      border-radius: 4px;
+      border-left: 3px solid var(--purple);
+    }
+
+    .tool-name {
+      color: var(--orange);
+      font-weight: bold;
+      min-width: 180px;
+    }
+
+    .tool-desc {
+      color: var(--gray);
+      font-size: 0.9rem;
+    }
+
+    .tools-grid {
+      display: grid;
+      gap: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--gray);
+      border-top: 1px solid var(--bg2);
+      margin-top: 3rem;
+    }
   </style>
 </head>
 <body>
-  <h1>🤖 Daemon MCP Server</h1>
-  <p>MCP endpoint for <a href="https://daemon.ajvanbeest.com">A.J. Van Beest's daemon</a>.</p>
+  <nav>
+    <div class="logo">DAEMON MCP</div>
+    <div class="links">
+      <a href="https://daemon.ajvanbeest.com">Main Site</a>
+      <a href="https://daemon.ajvanbeest.com/api">API Docs</a>
+      <a href="https://github.com/theaj42/daemon">GitHub</a>
+    </div>
+  </nav>
 
-  <h2>Usage</h2>
-  <p>Add this to your Claude Code or MCP client configuration:</p>
-  <pre>{
+  <div class="container">
+    <header style="margin: 3rem 0;">
+      <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+        <h1>MCP Server</h1>
+        <span class="badge badge-mcp">MCP</span>
+        <span class="badge badge-live">LIVE</span>
+      </div>
+      <p class="tagline">Model Context Protocol endpoint for <a href="https://daemon.ajvanbeest.com">A.J. Van Beest's daemon</a></p>
+    </header>
+
+    <section>
+      <h2>Quick Start</h2>
+      <p style="margin-bottom: 1rem;">Add this to your Claude Code or MCP client configuration:</p>
+      <pre><code>{
   "mcpServers": {
     "daemon-aj": {
       "url": "https://mcp.daemon.ajvanbeest.com/mcp"
     }
   }
-}</pre>
+}</code></pre>
+    </section>
 
-  <h2>Available Tools</h2>
-  ${TOOLS.map(t => `<div class="tool"><span class="tool-name">${t.name}</span><br>${t.description}</div>`).join('')}
+    <section>
+      <h2>Available Tools</h2>
+      <p style="color: var(--gray); margin-bottom: 1rem;">10 tools to query A.J.'s daemon API</p>
+      <div class="tools-grid">
+        ${TOOLS.map(t => `
+          <div class="tool">
+            <span class="tool-name">${t.name}</span>
+            <span class="tool-desc">${t.description}</span>
+          </div>
+        `).join('')}
+      </div>
+    </section>
 
-  <h2>Direct API</h2>
-  <p>The underlying REST API is at <a href="https://daemon.ajvanbeest.com">daemon.ajvanbeest.com</a></p>
+    <section>
+      <h2>Example Queries</h2>
+      <div class="card">
+        <p style="color: var(--gray); margin-bottom: 0.5rem;">Ask an AI assistant with this MCP server:</p>
+        <ul style="padding-left: 1.5rem; margin-top: 0.5rem;">
+          <li style="margin: 0.3rem 0;"><em>"What is A.J. Van Beest working on?"</em></li>
+          <li style="margin: 0.3rem 0;"><em>"What are A.J.'s sailing goals?"</em></li>
+          <li style="margin: 0.3rem 0;"><em>"What skills does A.J. have?"</em></li>
+          <li style="margin: 0.3rem 0;"><em>"What are A.J.'s core values and beliefs?"</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Details</h2>
+      <div class="card">
+        <p><strong style="color: var(--aqua);">Protocol:</strong> MCP over HTTP (JSON-RPC 2.0)</p>
+        <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">Endpoint:</strong> <code>POST /mcp</code></p>
+        <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">Health:</strong> <code>GET /health</code></p>
+        <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">REST API:</strong> <a href="https://daemon.ajvanbeest.com">daemon.ajvanbeest.com</a></p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Inspired by <a href="https://daemon.danielmiessler.com">Daniel Miessler's Daemon</a></p>
+    <p style="margin-top: 0.5rem;">Built with Cloudflare Workers · Gruvbox Material Dark</p>
+  </footer>
 </body>
 </html>`;
 
