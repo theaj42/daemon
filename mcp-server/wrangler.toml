@@ -1,0 +1,20 @@
+# Daemon MCP Server Configuration
+# MCP endpoint - mcp.daemon.ajvanbeest.com
+
+name = "daemon-mcp"
+main = "src/index.js"
+compatibility_date = "2024-11-29"
+
+# Custom domain
+routes = [
+  { pattern = "mcp.daemon.ajvanbeest.com", custom_domain = true }
+]
+
+# Environment variables
+[vars]
+DAEMON_API_URL = "https://daemon.ajvanbeest.com"
+
+# Development settings
+[dev]
+port = 8788
+local_protocol = "http"

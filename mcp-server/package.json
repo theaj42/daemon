@@ -1,0 +1,16 @@
+{
+  "name": "daemon-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for daemon personal API",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "keywords": ["daemon", "mcp", "cloudflare-workers"],
+  "author": "A.J. Van Beest",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^4.51.0"
+  }
+}
