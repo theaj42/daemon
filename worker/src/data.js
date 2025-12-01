@@ -1,12 +1,12 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2025-11-29T17:14:32.864Z
+// Generated: 2025-12-01T18:45:15.446Z
 
 export const publicData = {
   "about": {
     "name": "A.J. Van Beest",
-    "tagline": "I build robots to fight cybercrime.",
-    "bio": "Security professional who builds automation to fight cybercrime.\nAlso exploring the intersection of AI and security operations -\nexperimenting with personal AI infrastructure, agentic systems, and\nwhat happens when you give Claude Code too much freedom.\n",
+    "tagline": "Builder. Explorer. Improver of things.",
+    "bio": "I'm someone who improves things—not out of perfectionism, but because\nrefinement is how I engage with the world. Whether sailing, cooking,\nplaying music, or building systems, I'm always asking: how can this be better?\n\nI value precision in language and beauty in expression. I'm drawn to harder\npaths because they're more interesting. I make decisions intuitively, then\nfind data to support what I already know.\n\nProfessionally, I work in security and automation. Personally, I'm a sailor,\na musician (sax), a father, a partner, and someone trying to balance\nholding the ground for my people while still finding adventure.\n",
     "links": {
       "website": "https://ajvanbeest.com",
       "github": "https://github.com/theaj42",
@@ -19,6 +19,56 @@ export const publicData = {
       "GPEN (GIAC Penetration Tester)",
       "GSEC (GIAC Security Essentials)"
     ]
+  },
+  "identity": {
+    "core_statement": "I'm loyal and seek loyalty in return. I'm energized by groups but find my\ndeepest connections with individuals traveling similar paths—people who can\ndive into serious intellectual exploration and then go play in the dirt together.\n",
+    "missions": [
+      "Hold the ground for my people so they can pursue their dreams",
+      "Engage fully with the natural world through adventure",
+      "Build authentic, honest, joyful connections with family, friends, and community"
+    ],
+    "values": [
+      "Social justice",
+      "Equality",
+      "Wilderness",
+      "Environmentalism",
+      "Artisanry",
+      "Competence"
+    ],
+    "beliefs": [
+      "People are more important than money, corporations, computers, pretty much everything else",
+      "Sometimes the only way through is through—fear can be a marker of growth",
+      "We define 'success' for ourselves",
+      "It's okay to take a break. What's important is that I begin again",
+      "Physical adventure is a gateway to deeper understanding of ourselves",
+      "Personal AI systems should augment natural workflows, not replace them"
+    ]
+  },
+  "adventures": {
+    "sailing": {
+      "current_boat": "Merit (Drascombe Lugger)",
+      "status": "Preparing for 2026 launch",
+      "dreams": [
+        {
+          "goal": "Watertribe Everglades Challenge",
+          "target": 2028
+        },
+        {
+          "goal": "Race to Alaska (R2AK)",
+          "target": 2030
+        }
+      ],
+      "philosophy": "Sailing provides enforced presence—temporary relief from the optimization\nmindset. Solitude, physical reality, mastery pursuit, and enforced unplugging.\n"
+    },
+    "exploration": [
+      "France—exploring places we might like to live",
+      "Wilderness time (consistently needed, often deferred)",
+      "Taking harder paths because they're more interesting"
+    ],
+    "music": {
+      "instrument": "Saxophone (dormant 8+ years, recovering)",
+      "status": "Goal: recover sax and start playing again"
+    }
   },
   "projects": [
     {
@@ -36,7 +86,7 @@ export const publicData = {
     {
       "name": "Daemon",
       "status": "active",
-      "description": "This personal API - machine-readable identity for the AI age",
+      "description": "This personal API—machine-readable identity for the AI age",
       "tags": [
         "api",
         "mcp",
@@ -68,13 +118,13 @@ export const publicData = {
       "url": "https://github.com/theaj42/morning-pages-automation"
     },
     {
-      "name": "News Dashboard",
+      "name": "Merit Restoration",
       "status": "active",
-      "description": "Multi-agent news aggregation with attention-based scoring",
+      "description": "Revitalizing my Drascombe Lugger for all-weather dinghy cruising",
       "tags": [
-        "news",
-        "agents",
-        "rss"
+        "sailing",
+        "boat",
+        "craftsmanship"
       ]
     }
   ],
@@ -110,7 +160,7 @@ export const publicData = {
           "Agentic systems",
           "Local LLM deployment"
         ],
-        "context": "Building personal AI systems with an experimental, learning-focused approach.\nNot production security consulting - this is where I tinker and explore.\n"
+        "context": "Building personal AI systems with an experimental, learning-focused approach.\nPioneer-builder at the frontier of human-AI collaboration.\n"
       },
       {
         "domain": "AI + Security Intersection",
@@ -119,18 +169,45 @@ export const publicData = {
           "Automated threat analysis",
           "AI-powered vulnerability triage"
         ],
-        "context": "Exploring how AI can augment security work. Professional security background\nmeets personal AI experimentation. Lots of \"it depends\" in this space.\n"
+        "context": "Exploring how AI can augment security work. Professional security background\nmeets personal AI experimentation.\n"
+      }
+    ],
+    "personal": [
+      {
+        "domain": "Sailing",
+        "specifics": [
+          "Dinghy cruising",
+          "Small boat seamanship",
+          "Navigation"
+        ],
+        "context": "Building toward offshore racing and expedition sailing"
+      },
+      {
+        "domain": "Music",
+        "specifics": [
+          "Saxophone (jazz)",
+          "Improvisation"
+        ],
+        "context": "Recovering from 8-year hiatus"
+      },
+      {
+        "domain": "Craftsmanship",
+        "specifics": [
+          "Boat maintenance and restoration",
+          "Physical making/building"
+        ],
+        "context": "Physical creation provides essential balance to digital work"
       }
     ]
   },
   "interests": [
     {
-      "topic": "Agentic AI Systems",
-      "why": "Fascinated by autonomous AI that can plan and execute multi-step tasks",
+      "topic": "Human-AI Collaboration",
+      "why": "Pioneering partnership methodology, not just tool use",
       "tags": [
         "ai",
-        "agents",
-        "automation"
+        "collaboration",
+        "frontier"
       ]
     },
     {
@@ -143,8 +220,8 @@ export const publicData = {
       ]
     },
     {
-      "topic": "Sailing",
-      "why": "Long-term dream of Watertribe Everglades Challenge and Race to Alaska",
+      "topic": "Sailing & Adventure",
+      "why": "Long-term dream: Watertribe Everglades Challenge and Race to Alaska",
       "tags": [
         "sailing",
         "adventure",
@@ -153,7 +230,7 @@ export const publicData = {
     },
     {
       "topic": "Making & Building",
-      "why": "Builder at heart - physical and digital projects",
+      "why": "Builder at heart—physical and digital projects. Refinement is engagement.",
       "tags": [
         "maker",
         "diy",
@@ -162,15 +239,38 @@ export const publicData = {
     },
     {
       "topic": "Writing",
-      "why": "Morning pages practice, thinking through writing",
+      "why": "Morning pages practice, thinking through writing, precision in language",
       "tags": [
         "writing",
         "journaling",
         "thinking"
       ]
+    },
+    {
+      "topic": "Music",
+      "why": "Jazz saxophone—recovering a dormant part of myself",
+      "tags": [
+        "music",
+        "jazz",
+        "creative"
+      ]
+    },
+    {
+      "topic": "Language & Expression",
+      "why": "Precision matters. I want to communicate subtle shades of meaning.",
+      "tags": [
+        "language",
+        "communication",
+        "poetry"
+      ]
     }
   ],
   "looking_for": [
+    {
+      "type": "Kindred Spirits",
+      "description": "People who can dive into serious intellectual exploration and then go play in the dirt together",
+      "context": "Loyal connections with individuals traveling similar paths"
+    },
     {
       "type": "Conference Speaking",
       "description": "Opportunities to present on AI infrastructure, automation, or security topics",
@@ -182,11 +282,41 @@ export const publicData = {
       "context": "Interested in connecting with the small community exploring these ideas"
     },
     {
-      "type": "Conversation",
-      "description": "Discussions about the AI + security intersection",
-      "context": "Happy to share what I'm learning, hear what others are exploring"
+      "type": "Sailing Community",
+      "description": "Connections for Watertribe-style adventure sailing",
+      "context": "Building toward Everglades Challenge 2028 and R2AK 2030"
     }
   ],
+  "current_focus": {
+    "today": "Completed deep Telos update using evidence-based approach (reviewed full\nyear of morning pages with parallel AI agents). Updated daemon to reflect\nwhole-person identity, not just professional portfolio.\n",
+    "this_week": [
+      "Review and edit daemon blog post draft",
+      "Review and edit Telos update blog post draft",
+      "Continue voice interface refinement"
+    ],
+    "active_projects": [
+      {
+        "name": "Daemon",
+        "status": "MVP deployed, updated with whole-person identity",
+        "next_steps": [
+          "Theme with Gruvbox",
+          "Publish blog post"
+        ]
+      },
+      {
+        "name": "Telos Update",
+        "status": "Core sections complete",
+        "next_steps": [
+          "Refine Projects/Workflows/Models sections"
+        ]
+      },
+      {
+        "name": "Morning Pages Transcription",
+        "status": "Testing Gemini as alternative to Claude"
+      }
+    ],
+    "last_updated": "2025-12-01"
+  },
   "media": {
     "currently_reading": [
       {
@@ -201,41 +331,6 @@ export const publicData = {
 };
 
 export const trustedData = {
-  "current_focus": {
-    "today": "Building personal daemon API - designing data schema, setting up\nCloudflare Workers infrastructure, planning blog post.\n",
-    "this_week": [
-      "Get daemon MVP deployed to daemon.ajvanbeest.com",
-      "Write blog post about the daemon build process",
-      "Continue voice interface refinement"
-    ],
-    "active_projects": [
-      {
-        "name": "Daemon",
-        "status": "Building data schema and infrastructure",
-        "next_steps": [
-          "Deploy to Cloudflare Workers",
-          "Test MCP integration",
-          "Publish blog post"
-        ]
-      },
-      {
-        "name": "Voice Interface",
-        "status": "Core complete, testing in daily workflow",
-        "next_steps": [
-          "Add speak alias to .zshrc",
-          "Consider launchd plist for auto-start"
-        ]
-      },
-      {
-        "name": "Morning Pages Transcription",
-        "status": "Testing Gemini as alternative to Claude",
-        "blockers": [
-          "Need to set up personal GCP project for Gemini 3 Pro access"
-        ]
-      }
-    ],
-    "last_updated": "2025-11-29T10:00:00-06:00"
-  },
   "location": {
     "region": "Greater Chicago Area",
     "city": "St. Charles, Illinois",

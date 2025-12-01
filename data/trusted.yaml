@@ -1,39 +1,8 @@
 # Daemon Trusted Tier Data
 # This data requires authentication - for people you know
 #
-# Last Updated: 2025-11-29
-# This file should be updated more frequently than public.yaml
-
-current_focus:
-  today: |
-    Building personal daemon API - designing data schema, setting up
-    Cloudflare Workers infrastructure, planning blog post.
-
-  this_week:
-    - "Get daemon MVP deployed to daemon.ajvanbeest.com"
-    - "Write blog post about the daemon build process"
-    - "Continue voice interface refinement"
-
-  active_projects:
-    - name: "Daemon"
-      status: "Building data schema and infrastructure"
-      next_steps:
-        - "Deploy to Cloudflare Workers"
-        - "Test MCP integration"
-        - "Publish blog post"
-
-    - name: "Voice Interface"
-      status: "Core complete, testing in daily workflow"
-      next_steps:
-        - "Add speak alias to .zshrc"
-        - "Consider launchd plist for auto-start"
-
-    - name: "Morning Pages Transcription"
-      status: "Testing Gemini as alternative to Claude"
-      blockers:
-        - "Need to set up personal GCP project for Gemini 3 Pro access"
-
-  last_updated: "2025-11-29T10:00:00-06:00"
+# Last Updated: 2025-12-01
+# Note: current_focus moved to public tier
 
 location:
   region: "Greater Chicago Area"

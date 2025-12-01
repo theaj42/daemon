@@ -15,13 +15,23 @@ const TOOLS = [
     inputSchema: { type: 'object', properties: {}, required: [] }
   },
   {
+    name: 'get_identity',
+    description: 'Get A.J.\'s core identity - missions, values, beliefs, and what drives him',
+    inputSchema: { type: 'object', properties: {}, required: [] }
+  },
+  {
+    name: 'get_adventures',
+    description: 'Get A.J.\'s adventure pursuits - sailing dreams (Watertribe, R2AK), music (sax), exploration goals',
+    inputSchema: { type: 'object', properties: {}, required: [] }
+  },
+  {
     name: 'get_projects',
     description: 'Get list of public projects A.J. is working on',
     inputSchema: { type: 'object', properties: {}, required: [] }
   },
   {
     name: 'get_skills',
-    description: 'Get professional and exploratory skills',
+    description: 'Get professional, exploratory, and personal skills (including sailing, music, craftsmanship)',
     inputSchema: { type: 'object', properties: {}, required: [] }
   },
   {
@@ -31,12 +41,17 @@ const TOOLS = [
   },
   {
     name: 'get_looking_for',
-    description: 'Get what A.J. is looking for - collaboration, speaking opportunities, etc.',
+    description: 'Get what A.J. is looking for - kindred spirits, collaboration, speaking opportunities, sailing community',
     inputSchema: { type: 'object', properties: {}, required: [] }
   },
   {
     name: 'get_media',
     description: 'Get current reading and watching - books, movies, shows',
+    inputSchema: { type: 'object', properties: {}, required: [] }
+  },
+  {
+    name: 'get_current_focus',
+    description: 'Get what A.J. is currently working on - today, this week, and active projects',
     inputSchema: { type: 'object', properties: {}, required: [] }
   },
   {
@@ -78,11 +93,14 @@ async function fetchDaemon(endpoint) {
 async function handleToolCall(toolName) {
   const endpointMap = {
     'get_about': '/about',
+    'get_identity': '/identity',
+    'get_adventures': '/adventures',
     'get_projects': '/projects',
     'get_skills': '/skills',
     'get_interests': '/interests',
     'get_looking_for': '/looking_for',
     'get_media': '/media',
+    'get_current_focus': '/current_focus',
     'get_all': '/all'
   };
 
