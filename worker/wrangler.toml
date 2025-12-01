@@ -5,10 +5,10 @@ name = "daemon"
 main = "src/index.js"
 compatibility_date = "2024-11-29"
 
-# Custom domain (configure after first deploy)
-# routes = [
-#   { pattern = "daemon.ajvanbeest.com", custom_domain = true }
-# ]
+# Custom domain
+routes = [
+  { pattern = "daemon.ajvanbeest.com", custom_domain = true }
+]
 
 # Environment variables
 [vars]
