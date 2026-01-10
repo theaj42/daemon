@@ -1,7 +1,7 @@
 # Daemon Public Tier Data
 # This data is queryable by anyone without authentication
 #
-# Last Updated: 2026-01-08
+# Last Updated: 2026-01-10
 # Major revision: Updated to reflect whole-person identity (not just professional)
 
 about:
@@ -137,6 +137,16 @@ projects:
     description: "Transcribe and translate genealogical documents with AI"
     tags: ["genealogy", "ocr", "family-history"]
 
+  - name: "Conference Speaking 2026"
+    status: active
+    description: "Building speaker presence—researching conferences, developing talks, submitting CFPs"
+    tags: ["speaking", "conferences", "career", "ai", "security"]
+
+  - name: "Daemon Watch"
+    status: active
+    description: "Daily monitoring of UL community daemons for inspiration and pattern discovery"
+    tags: ["ai", "community", "automation", "daemons"]
+
 skills:
   professional:
     - domain: "Security Operations"
@@ -249,8 +259,8 @@ looking_for:
     context: "Loyal connections with individuals traveling similar paths"
 
   - type: "Conference Speaking"
-    description: "Opportunities to present on AI infrastructure, automation, or security topics"
-    context: "Building toward 2026 conference speaker path"
+    description: "Actively submitting to 2026 conferences on AI infrastructure and agentic security"
+    context: "First CFP submitted to DaemonCon. Targeting BSides312, GrrCON, and national AI conferences"
 
   - type: "Collaboration"
     description: "Others building personal AI infrastructure or daemon-like systems"
@@ -259,6 +269,12 @@ looking_for:
   - type: "Sailing Community"
     description: "Connections for Watertribe-style adventure sailing"
     context: "Building toward Everglades Challenge 2028 and R2AK 2030"
+
+mentions:
+  - source: "tasks-ng INSPIRATION.md"
+    url: "https://github.com/0xsalt/tasks-ng/blob/main/docs/INSPIRATION.md"
+    quote: "My goal with that is to provide so much context to my robot that I can simply ask 'Given everything, what should I work on now?' ...and its answer will be right."
+    date: "2026-01-10"
 
 current_focus:
   today: |

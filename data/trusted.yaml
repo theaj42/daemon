@@ -1,7 +1,7 @@
 # Daemon Trusted Tier Data
 # This data requires authentication - for people you know
 #
-# Last Updated: 2026-01-08
+# Last Updated: 2026-01-10
 # Note: current_focus moved to public tier
 
 location:
@@ -102,3 +102,50 @@ projects_detailed:
       - Processed 10+ memos successfully
       - iOS Shortcut for direct export pending
     help_wanted: null
+
+  - name: "Conference Speaking 2026"
+    status: "active - first CFP submitted"
+    description: |
+      Building speaker presence for 2026. Researching conferences, developing talk
+      abstracts, submitting CFPs. Focus on AI infrastructure and agentic security.
+    blockers: []
+    recent_progress: |
+      - Researched 18 conferences (4 security, 3 Midwest AI, 10 national AI, 5 international)
+      - Developed two talk concepts: "Self-Improving AI" (20-min) and "Agentic Threat Intel" (50-min)
+      - Submitted first CFP to DaemonCon (DePaul Security Daemons club)
+      - Created project folder with README, abstracts, and submission tracker
+    help_wanted: "Speaking opportunities at AI or security conferences"
+
+  - name: "Daemon Watch"
+    status: "active - monitoring 2 daemons"
+    description: |
+      Daily automated monitoring of UL community daemons. Fetches updates via MCP,
+      detects changes, generates morning reports for inspiration and pattern discovery.
+    blockers: []
+    recent_progress: |
+      - Built daemon-watch.py with MCP JSON-RPC fetching
+      - Launchd job runs at 04:00 daily
+      - Now monitoring: Daniel Miessler + SaltedKeys
+      - Integrated into first-session morning routine
+    help_wanted: null
+
+mentions:
+  - source: "tasks-ng INSPIRATION.md"
+    url: "https://github.com/0xsalt/tasks-ng/blob/main/docs/INSPIRATION.md"
+    quote: "My goal with that is to provide so much context to my robot that I can simply ask 'Given everything, what should I work on now?' ...and its answer will be right."
+    date: "2026-01-10"
+    context: "Credited as early contributor whose insight shaped the project's direction"
+
+current_focus:
+  today: |
+    AI Lab proposal sent to Wesley—awaiting response and scheduling conversation.
+    First CFP submitted (DaemonCon - Agentic Threat Intel talk for security students).
+    Conference Speaking 2026 strategy developed with calendar of CFP deadlines.
+
+  this_week:
+    - "Wait for Wesley's response on AI Lab proposal"
+    - "Jan 28: Decide and submit talk for [un]prompted"
+    - "Get Dexcom approval for DaemonCon demo screenshots"
+    - "Complete threat intel noise filter definition"
+
+  last_updated: "2026-01-10"

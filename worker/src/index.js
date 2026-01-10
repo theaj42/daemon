@@ -207,7 +207,7 @@ const landingPage = `<!DOCTYPE html>
 </head>
 <body>
   <nav>
-    <div class="logo">DAEMON</div>
+    <a href="https://github.com/danielmiessler/Daemon" class="logo">DAEMON</a>
     <div class="links">
       <a href="/api">API Docs</a>
       <a href="https://mcp.daemon.ajvanbeest.com">MCP Endpoint</a>
@@ -448,7 +448,7 @@ const apiDocsPage = `<!DOCTYPE html>
 </head>
 <body>
   <nav>
-    <a href="/" class="logo">DAEMON</a>
+    <a href="https://github.com/danielmiessler/Daemon" class="logo">DAEMON</a>
     <div class="links">
       <a href="/api">API Docs</a>
       <a href="https://mcp.daemon.ajvanbeest.com">MCP Endpoint</a>

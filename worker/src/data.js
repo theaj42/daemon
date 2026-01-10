@@ -1,6 +1,6 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2026-01-09T01:05:03.944Z
+// Generated: 2026-01-10T23:04:25.274Z
 
 export const publicData = {
   "about": {
@@ -176,6 +176,29 @@ export const publicData = {
         "genealogy",
         "ocr",
         "family-history"
+      ]
+    },
+    {
+      "name": "Conference Speaking 2026",
+      "status": "active",
+      "description": "Building speaker presence—researching conferences, developing talks, submitting CFPs",
+      "tags": [
+        "speaking",
+        "conferences",
+        "career",
+        "ai",
+        "security"
+      ]
+    },
+    {
+      "name": "Daemon Watch",
+      "status": "active",
+      "description": "Daily monitoring of UL community daemons for inspiration and pattern discovery",
+      "tags": [
+        "ai",
+        "community",
+        "automation",
+        "daemons"
       ]
     }
   ],
@@ -353,8 +376,8 @@ export const publicData = {
     },
     {
       "type": "Conference Speaking",
-      "description": "Opportunities to present on AI infrastructure, automation, or security topics",
-      "context": "Building toward 2026 conference speaker path"
+      "description": "Actively submitting to 2026 conferences on AI infrastructure and agentic security",
+      "context": "First CFP submitted to DaemonCon. Targeting BSides312, GrrCON, and national AI conferences"
     },
     {
       "type": "Collaboration",
@@ -365,6 +388,14 @@ export const publicData = {
       "type": "Sailing Community",
       "description": "Connections for Watertribe-style adventure sailing",
       "context": "Building toward Everglades Challenge 2028 and R2AK 2030"
+    }
+  ],
+  "mentions": [
+    {
+      "source": "tasks-ng INSPIRATION.md",
+      "url": "https://github.com/0xsalt/tasks-ng/blob/main/docs/INSPIRATION.md",
+      "quote": "My goal with that is to provide so much context to my robot that I can simply ask 'Given everything, what should I work on now?' ...and its answer will be right.",
+      "date": "2026-01-10"
     }
   ],
   "current_focus": {
@@ -500,6 +531,41 @@ export const trustedData = {
       "blockers": [],
       "recent_progress": "- Built complete pipeline: iOS → iCloud → whisper.cpp → Claude\n- Processed 10+ memos successfully\n- iOS Shortcut for direct export pending\n",
       "help_wanted": null
+    },
+    {
+      "name": "Conference Speaking 2026",
+      "status": "active - first CFP submitted",
+      "description": "Building speaker presence for 2026. Researching conferences, developing talk\nabstracts, submitting CFPs. Focus on AI infrastructure and agentic security.\n",
+      "blockers": [],
+      "recent_progress": "- Researched 18 conferences (4 security, 3 Midwest AI, 10 national AI, 5 international)\n- Developed two talk concepts: \"Self-Improving AI\" (20-min) and \"Agentic Threat Intel\" (50-min)\n- Submitted first CFP to DaemonCon (DePaul Security Daemons club)\n- Created project folder with README, abstracts, and submission tracker\n",
+      "help_wanted": "Speaking opportunities at AI or security conferences"
+    },
+    {
+      "name": "Daemon Watch",
+      "status": "active - monitoring 2 daemons",
+      "description": "Daily automated monitoring of UL community daemons. Fetches updates via MCP,\ndetects changes, generates morning reports for inspiration and pattern discovery.\n",
+      "blockers": [],
+      "recent_progress": "- Built daemon-watch.py with MCP JSON-RPC fetching\n- Launchd job runs at 04:00 daily\n- Now monitoring: Daniel Miessler + SaltedKeys\n- Integrated into first-session morning routine\n",
+      "help_wanted": null
     }
-  ]
+  ],
+  "mentions": [
+    {
+      "source": "tasks-ng INSPIRATION.md",
+      "url": "https://github.com/0xsalt/tasks-ng/blob/main/docs/INSPIRATION.md",
+      "quote": "My goal with that is to provide so much context to my robot that I can simply ask 'Given everything, what should I work on now?' ...and its answer will be right.",
+      "date": "2026-01-10",
+      "context": "Credited as early contributor whose insight shaped the project's direction"
+    }
+  ],
+  "current_focus": {
+    "today": "AI Lab proposal sent to Wesley—awaiting response and scheduling conversation.\nFirst CFP submitted (DaemonCon - Agentic Threat Intel talk for security students).\nConference Speaking 2026 strategy developed with calendar of CFP deadlines.\n",
+    "this_week": [
+      "Wait for Wesley's response on AI Lab proposal",
+      "Jan 28: Decide and submit talk for [un]prompted",
+      "Get Dexcom approval for DaemonCon demo screenshots",
+      "Complete threat intel noise filter definition"
+    ],
+    "last_updated": "2026-01-10"
+  }
 };
