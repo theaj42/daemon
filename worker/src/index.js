@@ -212,6 +212,7 @@ const landingPage = `<!DOCTYPE html>
       <a href="/api">API Docs</a>
       <a href="https://mcp.daemon.ajvanbeest.com">MCP Endpoint</a>
       <a href="https://github.com/theaj42/daemon">GitHub</a>
+      <a href="https://ajvanbeest.com">Blog</a>
     </div>
   </nav>
 
@@ -452,6 +453,7 @@ const apiDocsPage = `<!DOCTYPE html>
       <a href="/api">API Docs</a>
       <a href="https://mcp.daemon.ajvanbeest.com">MCP Endpoint</a>
       <a href="https://github.com/theaj42/daemon">GitHub</a>
+      <a href="https://ajvanbeest.com">Blog</a>
     </div>
   </nav>
 
