@@ -1,7 +1,7 @@
 # Daemon Public Tier Data
 # This data is queryable by anyone without authentication
 #
-# Last Updated: 2025-12-01
+# Last Updated: 2026-01-08
 # Major revision: Updated to reflect whole-person identity (not just professional)
 
 about:
@@ -60,6 +60,7 @@ identity:
     - "It's okay to take a break. What's important is that I begin again"
     - "Physical adventure is a gateway to deeper understanding of ourselves"
     - "Personal AI systems should augment natural workflows, not replace them"
+    - "Done isn't just produced output—it's proved coverage and showed work"
 
 adventures:
   sailing:
@@ -89,7 +90,6 @@ projects:
     status: active
     description: "Privacy-first AI context system with self-contained agents and local memory"
     tags: ["ai", "claude-code", "privacy", "automation"]
-    url: "https://github.com/theaj42/AI-assistant"
 
   - name: "Daemon"
     status: active
@@ -106,12 +106,36 @@ projects:
     status: active
     description: "Handwritten journal to digital text pipeline using AI transcription"
     tags: ["automation", "journaling", "ocr"]
-    url: "https://github.com/theaj42/morning-pages-automation"
 
   - name: "Merit Restoration"
     status: active
     description: "Revitalizing my Drascombe Lugger for all-weather dinghy cruising"
     tags: ["sailing", "boat", "craftsmanship"]
+
+  - name: "Defining Done Framework"
+    status: active
+    description: "Framework for specifying agentic workflow completion criteria"
+    tags: ["ai", "workflows", "evaluation", "production"]
+
+  - name: "AI Skill Tree"
+    status: active
+    description: "4-level maturity assessment for AI systems (Conditioning → Authority → Workflows → Compounding)"
+    tags: ["ai", "assessment", "production-readiness"]
+
+  - name: "Personal Board of Directors"
+    status: active
+    description: "Career governance system inspired by Nate B. Jones - quarterly audits, avoided decisions surfacing"
+    tags: ["career", "governance", "self-reflection"]
+
+  - name: "Voice Capture Pipeline"
+    status: complete
+    description: "iOS Voice Memo → iCloud → whisper.cpp local transcription → Claude analysis"
+    tags: ["voice", "automation", "privacy", "local-first"]
+
+  - name: "Genealogy Transcription"
+    status: complete
+    description: "Transcribe and translate genealogical documents with AI"
+    tags: ["genealogy", "ocr", "family-history"]
 
 skills:
   professional:
@@ -128,7 +152,6 @@ skills:
         - "Python scripting"
         - "API integration"
         - "Workflow automation"
-        - "n8n/orchestration tools"
       proficiency: expert
 
   exploratory:
@@ -151,12 +174,24 @@ skills:
         Exploring how AI can augment security work. Professional security background
         meets personal AI experimentation.
 
+    - domain: "AI Production Hardening"
+      specifics:
+        - "Evaluation harnesses and golden sets"
+        - "Failure mode taxonomy"
+        - "Pre-ship feedback loops"
+        - "Defining 'done' for agentic workflows"
+      context: |
+        Level 4 of the AI Skill Tree - the missing piece for "trusted overnight autonomy."
+        Strong at exploration (Levels 1-2), building workflows (Level 3), weak at production hardening.
+
   personal:
     - domain: "Sailing"
       specifics:
         - "Dinghy cruising"
+        - "Keel boat cruising"
         - "Small boat seamanship"
         - "Navigation"
+        - "Offshore"
       context: "Building toward offshore racing and expedition sailing"
 
     - domain: "Music"
@@ -181,7 +216,7 @@ interests:
     tags: ["privacy", "local-first", "self-hosted"]
 
   - topic: "Sailing & Adventure"
-    why: "Long-term dream: Watertribe Everglades Challenge and Race to Alaska"
+    why: "Long-term dream: Watertribe Everglades Challenge and R2AK"
     tags: ["sailing", "adventure", "outdoors"]
 
   - topic: "Making & Building"
@@ -199,6 +234,14 @@ interests:
   - topic: "Language & Expression"
     why: "Precision matters. I want to communicate subtle shades of meaning."
     tags: ["language", "communication", "poetry"]
+
+  - topic: "Defining Done for AI"
+    why: "The bottleneck has moved from model capability to how we harness models"
+    tags: ["ai", "evaluation", "production"]
+
+  - topic: "Career Governance"
+    why: "Personal Board of Directors - forcing clarity on avoided decisions"
+    tags: ["career", "self-reflection", "governance"]
 
 looking_for:
   - type: "Kindred Spirits"
@@ -219,31 +262,47 @@ looking_for:
 
 current_focus:
   today: |
-    Completed deep Telos update using evidence-based approach (reviewed full
-    year of morning pages with parallel AI agents). Updated daemon to reflect
-    whole-person identity, not just professional portfolio.
+    Updating daemon with 6 weeks of accumulated work. Major developments include
+    session start optimization (60-80% token reduction via pre-computed context),
+    "Defining Done" framework for agentic workflows, and AI Skill Tree assessment.
 
   this_week:
-    - "Review and edit daemon blog post draft"
-    - "Review and edit Telos update blog post draft"
-    - "Continue voice interface refinement"
+    - "Build full done-definition for threat intel monitoring workflow"
+    - "Design /user-define-done skill for repeatable workflow specification"
+    - "Complete AI Skill Tree gap analysis (Level 4 production hardening)"
+    - "Force clarity conversation with Wesley on IC vs leadership path"
 
   active_projects:
-    - name: "Daemon"
-      status: "MVP deployed, updated with whole-person identity"
+    - name: "Defining Done Framework"
+      status: "Active exploration - core framework established"
       next_steps:
-        - "Theme with Gruvbox"
-        - "Publish blog post"
+        - "Complete threat intel done-definition as proof of concept"
+        - "Test framework on second workflow (quarterly reports)"
+        - "Build /user-define-done skill"
 
-    - name: "Telos Update"
-      status: "Core sections complete"
+    - name: "AI Skill Tree"
+      status: "Assessment complete, gap analysis in progress"
       next_steps:
-        - "Refine Projects/Workflows/Models sections"
+        - "Prioritize Level 4 gaps (evaluation harnesses, failure taxonomy)"
+        - "Build production harness for one workflow"
 
-    - name: "Morning Pages Transcription"
-      status: "Testing Gemini as alternative to Claude"
+    - name: "Personal Board of Directors"
+      status: "MVP deployed, first audit complete"
+      next_steps:
+        - "Run /user-board setup for full Problem Portfolio"
+        - "Establish quarterly cadence"
 
-  last_updated: "2025-12-01"
+    - name: "Session Start Optimization"
+      status: "Complete - deployed"
+      next_steps:
+        - "Monitor token savings in practice"
+
+    - name: "Voice Capture Pipeline"
+      status: "Complete - operational"
+      next_steps:
+        - "Create iOS Shortcut for direct export"
+
+  last_updated: "2026-01-08"
 
 media:
   currently_reading:

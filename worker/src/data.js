@@ -1,6 +1,6 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2025-12-01T18:45:15.446Z
+// Generated: 2026-01-09T01:05:03.944Z
 
 export const publicData = {
   "about": {
@@ -41,7 +41,8 @@ export const publicData = {
       "We define 'success' for ourselves",
       "It's okay to take a break. What's important is that I begin again",
       "Physical adventure is a gateway to deeper understanding of ourselves",
-      "Personal AI systems should augment natural workflows, not replace them"
+      "Personal AI systems should augment natural workflows, not replace them",
+      "Done isn't just produced output—it's proved coverage and showed work"
     ]
   },
   "adventures": {
@@ -80,8 +81,7 @@ export const publicData = {
         "claude-code",
         "privacy",
         "automation"
-      ],
-      "url": "https://github.com/theaj42/AI-assistant"
+      ]
     },
     {
       "name": "Daemon",
@@ -114,8 +114,7 @@ export const publicData = {
         "automation",
         "journaling",
         "ocr"
-      ],
-      "url": "https://github.com/theaj42/morning-pages-automation"
+      ]
     },
     {
       "name": "Merit Restoration",
@@ -125,6 +124,58 @@ export const publicData = {
         "sailing",
         "boat",
         "craftsmanship"
+      ]
+    },
+    {
+      "name": "Defining Done Framework",
+      "status": "active",
+      "description": "Framework for specifying agentic workflow completion criteria",
+      "tags": [
+        "ai",
+        "workflows",
+        "evaluation",
+        "production"
+      ]
+    },
+    {
+      "name": "AI Skill Tree",
+      "status": "active",
+      "description": "4-level maturity assessment for AI systems (Conditioning → Authority → Workflows → Compounding)",
+      "tags": [
+        "ai",
+        "assessment",
+        "production-readiness"
+      ]
+    },
+    {
+      "name": "Personal Board of Directors",
+      "status": "active",
+      "description": "Career governance system inspired by Nate B. Jones - quarterly audits, avoided decisions surfacing",
+      "tags": [
+        "career",
+        "governance",
+        "self-reflection"
+      ]
+    },
+    {
+      "name": "Voice Capture Pipeline",
+      "status": "complete",
+      "description": "iOS Voice Memo → iCloud → whisper.cpp local transcription → Claude analysis",
+      "tags": [
+        "voice",
+        "automation",
+        "privacy",
+        "local-first"
+      ]
+    },
+    {
+      "name": "Genealogy Transcription",
+      "status": "complete",
+      "description": "Transcribe and translate genealogical documents with AI",
+      "tags": [
+        "genealogy",
+        "ocr",
+        "family-history"
       ]
     }
   ],
@@ -145,8 +196,7 @@ export const publicData = {
         "specifics": [
           "Python scripting",
           "API integration",
-          "Workflow automation",
-          "n8n/orchestration tools"
+          "Workflow automation"
         ],
         "proficiency": "expert"
       }
@@ -170,6 +220,16 @@ export const publicData = {
           "AI-powered vulnerability triage"
         ],
         "context": "Exploring how AI can augment security work. Professional security background\nmeets personal AI experimentation.\n"
+      },
+      {
+        "domain": "AI Production Hardening",
+        "specifics": [
+          "Evaluation harnesses and golden sets",
+          "Failure mode taxonomy",
+          "Pre-ship feedback loops",
+          "Defining 'done' for agentic workflows"
+        ],
+        "context": "Level 4 of the AI Skill Tree - the missing piece for \"trusted overnight autonomy.\"\nStrong at exploration (Levels 1-2), building workflows (Level 3), weak at production hardening.\n"
       }
     ],
     "personal": [
@@ -177,8 +237,10 @@ export const publicData = {
         "domain": "Sailing",
         "specifics": [
           "Dinghy cruising",
+          "Keel boat cruising",
           "Small boat seamanship",
-          "Navigation"
+          "Navigation",
+          "Offshore"
         ],
         "context": "Building toward offshore racing and expedition sailing"
       },
@@ -221,7 +283,7 @@ export const publicData = {
     },
     {
       "topic": "Sailing & Adventure",
-      "why": "Long-term dream: Watertribe Everglades Challenge and Race to Alaska",
+      "why": "Long-term dream: Watertribe Everglades Challenge and R2AK",
       "tags": [
         "sailing",
         "adventure",
@@ -263,6 +325,24 @@ export const publicData = {
         "communication",
         "poetry"
       ]
+    },
+    {
+      "topic": "Defining Done for AI",
+      "why": "The bottleneck has moved from model capability to how we harness models",
+      "tags": [
+        "ai",
+        "evaluation",
+        "production"
+      ]
+    },
+    {
+      "topic": "Career Governance",
+      "why": "Personal Board of Directors - forcing clarity on avoided decisions",
+      "tags": [
+        "career",
+        "self-reflection",
+        "governance"
+      ]
     }
   ],
   "looking_for": [
@@ -288,34 +368,55 @@ export const publicData = {
     }
   ],
   "current_focus": {
-    "today": "Completed deep Telos update using evidence-based approach (reviewed full\nyear of morning pages with parallel AI agents). Updated daemon to reflect\nwhole-person identity, not just professional portfolio.\n",
+    "today": "Updating daemon with 6 weeks of accumulated work. Major developments include\nsession start optimization (60-80% token reduction via pre-computed context),\n\"Defining Done\" framework for agentic workflows, and AI Skill Tree assessment.\n",
     "this_week": [
-      "Review and edit daemon blog post draft",
-      "Review and edit Telos update blog post draft",
-      "Continue voice interface refinement"
+      "Build full done-definition for threat intel monitoring workflow",
+      "Design /user-define-done skill for repeatable workflow specification",
+      "Complete AI Skill Tree gap analysis (Level 4 production hardening)",
+      "Force clarity conversation with Wesley on IC vs leadership path"
     ],
     "active_projects": [
       {
-        "name": "Daemon",
-        "status": "MVP deployed, updated with whole-person identity",
+        "name": "Defining Done Framework",
+        "status": "Active exploration - core framework established",
         "next_steps": [
-          "Theme with Gruvbox",
-          "Publish blog post"
+          "Complete threat intel done-definition as proof of concept",
+          "Test framework on second workflow (quarterly reports)",
+          "Build /user-define-done skill"
         ]
       },
       {
-        "name": "Telos Update",
-        "status": "Core sections complete",
+        "name": "AI Skill Tree",
+        "status": "Assessment complete, gap analysis in progress",
         "next_steps": [
-          "Refine Projects/Workflows/Models sections"
+          "Prioritize Level 4 gaps (evaluation harnesses, failure taxonomy)",
+          "Build production harness for one workflow"
         ]
       },
       {
-        "name": "Morning Pages Transcription",
-        "status": "Testing Gemini as alternative to Claude"
+        "name": "Personal Board of Directors",
+        "status": "MVP deployed, first audit complete",
+        "next_steps": [
+          "Run /user-board setup for full Problem Portfolio",
+          "Establish quarterly cadence"
+        ]
+      },
+      {
+        "name": "Session Start Optimization",
+        "status": "Complete - deployed",
+        "next_steps": [
+          "Monitor token savings in practice"
+        ]
+      },
+      {
+        "name": "Voice Capture Pipeline",
+        "status": "Complete - operational",
+        "next_steps": [
+          "Create iOS Shortcut for direct export"
+        ]
       }
     ],
-    "last_updated": "2025-12-01"
+    "last_updated": "2026-01-08"
   },
   "media": {
     "currently_reading": [
@@ -339,35 +440,65 @@ export const trustedData = {
   },
   "availability": {
     "open_to_calls": true,
-    "preferred_contact": "linkedin",
-    "best_times": "Weekday mornings (9-11 AM CT) or by appointment",
+    "preferred_contact": "email",
+    "best_times": "Weekday mornings (7-10 AM CT) or by appointment",
     "response_time": "Usually within 24-48 hours"
   },
   "projects_detailed": [
     {
-      "name": "Daemon",
-      "status": "active - building MVP",
-      "description": "Personal API inspired by Daniel Miessler's daemon concept.\nTwo-tier access (public/trusted) for privacy-conscious implementation.\nCloudflare Workers + KV for deployment.\n",
+      "name": "Personal AI Infrastructure",
+      "status": "active - mature and evolving",
+      "description": "Core AI context system with session logging, ChromaDB memory, voice interface,\nmaintenance automation, and multiple specialized agents. Now includes\npre-computed session context, background automation (git sync, morning prep,\nrolling summary updates), and comprehensive maintenance validation.\n",
       "blockers": [],
-      "recent_progress": "Set up project infrastructure, designed data schema, created\ndecision log for blog post.\n",
-      "help_wanted": "Feedback on the approach, connections to others building similar systems"
+      "recent_progress": "- Streamlined session start (60-80% token reduction)\n- Background automation: git sync every 15min, morning prep at 4am, rolling summary at 1am\n- Google Calendar and Gmail MCP integration\n- Maintenance validation system with pending actions\n- AI Skill Tree assessment (identified Level 4 gaps)\n",
+      "help_wanted": "Feedback on evaluation harness patterns, production hardening approaches"
     },
     {
-      "name": "Personal AI Infrastructure",
-      "status": "active - ongoing refinement",
-      "description": "Core AI context system with 6 production-ready agents, ChromaDB\nmemory, session logging, voice interface.\n",
+      "name": "Daemon",
+      "status": "active - content refresh",
+      "description": "Personal API with two-tier access. MVP deployed at daemon.ajvanbeest.com.\nMCP server available for AI discovery.\n",
       "blockers": [],
-      "recent_progress": "Added Claude Code hooks (session-start, bash-audit, voice-output).\nCreated custom subagents (code-reviewer, test-generator, session-synthesizer).\n",
+      "recent_progress": "MCP server created for daemon discovery. Content refresh completed Jan 2026.",
       "help_wanted": null
     },
     {
       "name": "Morning Pages Transcription",
-      "status": "active - testing alternatives",
-      "description": "Handwritten journal transcription. Claude quality stuck at ~53%\ndue to model bias. Testing Gemini as alternative.\n",
-      "blockers": [
-        "Gemini 3 Pro requires paid GCP project (free tier quota=0)"
-      ],
-      "recent_progress": "Added Gemini transcriber support, tested multiple models",
+      "status": "active - stable with Gemini",
+      "description": "Handwritten journal transcription using Gemini 3 Pro via Vertex AI.\nAutomated daily via launchd.\n",
+      "blockers": [],
+      "recent_progress": "- Migrated to Gemini 3 Pro Preview via Vertex AI\n- Fixed section placement and underline formatting\n- Added $10/month hard billing limit with automatic cutoff\n",
+      "help_wanted": null
+    },
+    {
+      "name": "Defining Done Framework",
+      "status": "active - core exploration",
+      "description": "Framework for specifying completion criteria for agentic workflows.\nBased on Nate B. Jones's Ralph Wiggum pattern concepts.\n",
+      "blockers": [],
+      "recent_progress": "- Developed 4-layer framework (coverage, completeness, accuracy, relevance, failure acknowledgment)\n- Applied to threat intel monitoring as first case study\n- Identified key insight: \"Done isn't just produced output—it's proved coverage and showed work\"\n",
+      "help_wanted": "Examples of evaluation harnesses in production AI systems"
+    },
+    {
+      "name": "AI Skill Tree",
+      "status": "active - assessment complete",
+      "description": "4-level maturity framework for AI systems based on Karpathy reflection video.\nLevels: Conditioning → Authority → Workflows → Compounding.\n",
+      "blockers": [],
+      "recent_progress": "- Completed comprehensive 12-node assessment\n- Identified pattern: Strong at Levels 1-2, building Level 3, weak at Level 4\n- Created Dexcom-focused production-ready checklist\n",
+      "help_wanted": null
+    },
+    {
+      "name": "Personal Board of Directors",
+      "status": "active - MVP deployed",
+      "description": "Career governance system inspired by Nate B. Jones. Surfaces avoided decisions,\ntracks problems as assets, runs quarterly audits.\n",
+      "blockers": [],
+      "recent_progress": "- Built /user-board skill with quick/setup/quarterly modes\n- Ran first quick audit - surfaced leadership decision avoidance\n- Created reflections inbox for board-material capture\n",
+      "help_wanted": null
+    },
+    {
+      "name": "Voice Capture Pipeline",
+      "status": "complete - operational",
+      "description": "iOS Voice Memo to Claude analysis pipeline. Local whisper.cpp transcription\nfor privacy and zero ongoing cost.\n",
+      "blockers": [],
+      "recent_progress": "- Built complete pipeline: iOS → iCloud → whisper.cpp → Claude\n- Processed 10+ memos successfully\n- iOS Shortcut for direct export pending\n",
       "help_wanted": null
     }
   ]
