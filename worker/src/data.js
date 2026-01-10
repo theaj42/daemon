@@ -1,6 +1,6 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2026-01-10T23:07:19.182Z
+// Generated: 2026-01-10T23:31:21.557Z
 
 export const publicData = {
   "about": {
@@ -396,6 +396,20 @@ export const publicData = {
       "url": "https://github.com/0xsalt/tasks-ng/blob/main/docs/INSPIRATION.md",
       "quote": "My goal with that is to provide so much context to my robot that I can simply ask 'Given everything, what should I work on now?' ...and its answer will be right.",
       "date": "2026-01-10"
+    }
+  ],
+  "recent_posts": [
+    {
+      "title": "Composable Security Investigations",
+      "date": "2026-01-01",
+      "url": "https://ajvanbeest.com/posts/2026-01-01_Composable-security-investigations",
+      "summary": "How to build agentic security playbooks using composable, reusable steps—like security Legos."
+    },
+    {
+      "title": "Building My Daemon",
+      "date": "2025-12-01",
+      "url": "https://ajvanbeest.com/posts/2025-12-01_Building-my-daemon",
+      "summary": "The story of building a machine-readable identity API for the AI age, inspired by Daniel Miessler."
     }
   ],
   "current_focus": {
