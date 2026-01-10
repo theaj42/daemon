@@ -40,7 +40,14 @@ projects_detailed:
       Personal API with two-tier access. MVP deployed at daemon.ajvanbeest.com.
       MCP server available for AI discovery.
     blockers: []
-    recent_progress: "MCP server created for daemon discovery. Content refresh completed Jan 2026."
+    recent_progress: |
+      - MCP server created for daemon discovery
+      - Content refresh completed Jan 2026
+      - Added mentions section, conference speaking project, daemon watch
+      - Linked DAEMON header to Miessler's original repo
+    next_steps:
+      - "Add blog post summaries as new posts are published"
+      - "Consider per-user API keys (exploration: 2026-01-25)"
     help_wanted: null
 
   - name: "Morning Pages Transcription"

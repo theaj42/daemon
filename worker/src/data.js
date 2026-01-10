@@ -1,6 +1,6 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2026-01-10T23:04:25.274Z
+// Generated: 2026-01-10T23:07:19.182Z
 
 export const publicData = {
   "about": {
@@ -489,7 +489,11 @@ export const trustedData = {
       "status": "active - content refresh",
       "description": "Personal API with two-tier access. MVP deployed at daemon.ajvanbeest.com.\nMCP server available for AI discovery.\n",
       "blockers": [],
-      "recent_progress": "MCP server created for daemon discovery. Content refresh completed Jan 2026.",
+      "recent_progress": "- MCP server created for daemon discovery\n- Content refresh completed Jan 2026\n- Added mentions section, conference speaking project, daemon watch\n- Linked DAEMON header to Miessler's original repo\n",
+      "next_steps": [
+        "Add blog post summaries as new posts are published",
+        "Consider per-user API keys (exploration: 2026-01-25)"
+      ],
       "help_wanted": null
     },
     {
