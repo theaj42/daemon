@@ -348,7 +348,7 @@ const landingPage = `<!DOCTYPE html>
       <pre><code>{
   "mcpServers": {
     "daemon-aj": {
-      "url": "https://mcp.daemon.ajvanbeest.com/mcp"
+      "url": "https://mcp.daemon.ajvanbeest.com/"
     }
   }
 }</code></pre>
@@ -384,8 +384,9 @@ const landingPage = `<!DOCTYPE html>
       <h2>Technical Details</h2>
       <div class="card">
         <p><strong style="color: var(--aqua);">Protocol:</strong> MCP over HTTP (JSON-RPC 2.0)</p>
-        <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">Endpoint:</strong> <code>POST /mcp</code></p>
+        <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">Endpoint:</strong> <code>POST /</code></p>
         <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">Health:</strong> <code>GET /health</code></p>
+        <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">Legacy:</strong> <code>POST /mcp</code> (still works)</p>
         <p style="margin-top: 0.5rem;"><strong style="color: var(--aqua);">REST API:</strong> <a href="https://daemon.ajvanbeest.com">daemon.ajvanbeest.com</a></p>
       </div>
     </section>
@@ -407,16 +408,37 @@ export default {
       return new Response(null, { headers: corsHeaders });
     }
 
-    // Landing page
+    // MCP endpoint at root (POST) - aligned with Swift/Miessler pattern
+    if (url.pathname === '/' && request.method === 'POST') {
+      return handleMcpRequest(request);
+    }
+
+    // Info page at root (GET) - machine-readable like other daemons
     if (url.pathname === '/' && request.method === 'GET') {
-      return new Response(landingPage, {
-        headers: { 'Content-Type': 'text/html', ...corsHeaders }
+      return jsonResponse({
+        name: SERVER_INFO.name,
+        version: SERVER_INFO.version,
+        description: SERVER_INFO.description,
+        protocolVersion: '2024-11-05',
+        capabilities: { tools: {} },
+        endpoints: { jsonrpc: 'POST /' },
+        security: {
+          cors: 'open',
+          note: 'Data is public by design.'
+        }
       });
     }
 
-    // MCP endpoint
+    // Legacy /mcp endpoint (backwards compatibility)
     if (url.pathname === '/mcp' && request.method === 'POST') {
       return handleMcpRequest(request);
+    }
+
+    // Landing page with docs
+    if (url.pathname === '/docs' && request.method === 'GET') {
+      return new Response(landingPage, {
+        headers: { 'Content-Type': 'text/html', ...corsHeaders }
+      });
     }
 
     // Health check
@@ -424,6 +446,6 @@ export default {
       return jsonResponse({ status: 'ok', server: SERVER_INFO });
     }
 
-    return jsonResponse({ error: 'Not found', endpoints: ['/', '/mcp', '/health'] }, 404);
+    return jsonResponse({ error: 'Not found', endpoints: ['/', '/mcp', '/docs', '/health'] }, 404);
   }
 };

@@ -276,7 +276,7 @@ const landingPage = `<!DOCTYPE html>
       <div class="card">
         <p>This daemon exposes machine-readable data about me for AI assistants and curious humans.</p>
         <p style="margin-top: 1rem;">
-          <strong>MCP Endpoint:</strong> <code>https://mcp.daemon.ajvanbeest.com/mcp</code>
+          <strong>MCP Endpoint:</strong> <code>https://mcp.daemon.ajvanbeest.com/</code>
         </p>
         <p style="margin-top: 0.5rem;">
           <strong>REST API:</strong> <code>https://daemon.ajvanbeest.com/all</code>
@@ -581,7 +581,7 @@ console.log(about.tagline);
       <pre><code>{
   "mcpServers": {
     "daemon-aj": {
-      "url": "https://mcp.daemon.ajvanbeest.com/mcp"
+      "url": "https://mcp.daemon.ajvanbeest.com/"
     }
   }
 }</code></pre>
@@ -682,6 +682,42 @@ export default {
 
     const url = new URL(request.url);
     const path = url.pathname;
+
+    // Daemon.md for registry verification
+    if (path === '/daemon.md') {
+      const daemonMd = `# DAEMON DATA FILE
+
+This file contains the public information for A.J. Van Beest's Daemon personal API.
+
+---
+
+[ABOUT]
+
+${publicData.about.bio}
+
+[TAGLINE]
+
+${publicData.about.tagline}
+
+[LINKS]
+
+- Website: ${publicData.about.links.website}
+- GitHub: ${publicData.about.links.github}
+- LinkedIn: ${publicData.about.links.linkedin}
+- Daemon: ${publicData.about.links.daemon}
+
+[MCP_ENDPOINT]
+
+https://mcp.daemon.ajvanbeest.com/
+
+[PROTOCOL]
+
+mcp-rpc (JSON-RPC 2.0 over HTTPS)
+`;
+      return new Response(daemonMd, {
+        headers: { 'Content-Type': 'text/markdown', ...corsHeaders }
+      });
+    }
 
     // HTML pages
     if (path === '/') {
