@@ -1,7 +1,7 @@
 # Daemon Public Tier Data
 # This data is queryable by anyone without authentication
 #
-# Last Updated: 2026-01-10
+# Last Updated: 2026-01-17
 # Major revision: Updated to reflect whole-person identity (not just professional)
 
 about:
@@ -26,6 +26,7 @@ about:
     website: "https://ajvanbeest.com"
     github: "https://github.com/theaj42"
     linkedin: "https://linkedin.com/in/ajvanbeest"
+    email: "ajvanbeest@protonmail.com"
     daemon: "https://daemon.ajvanbeest.com"
 
   certifications:
@@ -33,6 +34,17 @@ about:
     - "GWAPT (GIAC Web Application Penetration Tester)"
     - "GPEN (GIAC Penetration Tester)"
     - "GSEC (GIAC Security Essentials)"
+
+  current_focus:
+    today: |
+      PAI pattern adoption complete—built verification checkpoints, hooks system,
+      and learning signals infrastructure. ChromaDB collection fix deployed.
+      Security audits identified 4 HIGH RISK agents.
+    this_week:
+      - "Review security audit findings and implement context isolation"
+      - "Test new hooks system for automatic signal capture"
+      - "Continue conference CFP submissions"
+    last_updated: "2026-01-17"
 
 identity:
   core_statement: |
@@ -85,7 +97,7 @@ adventures:
     status: "Goal: recover sax and start playing again"
 
 projects:
-  # Active public projects
+  # Active projects
   - name: "Personal AI Infrastructure"
     status: active
     description: "Privacy-first AI context system with self-contained agents and local memory"
@@ -96,11 +108,6 @@ projects:
     description: "This personal API—machine-readable identity for the AI age"
     tags: ["api", "mcp", "personal-data", "cloudflare"]
     url: "https://github.com/theaj42/daemon"
-
-  - name: "Voice Interface"
-    status: complete
-    description: "Local text-to-speech with Kokoro/Piper for Claude Code voice output"
-    tags: ["voice", "tts", "local-first", "privacy"]
 
   - name: "Morning Pages Automation"
     status: active
@@ -127,16 +134,6 @@ projects:
     description: "Career governance system inspired by Nate B. Jones - quarterly audits, avoided decisions surfacing"
     tags: ["career", "governance", "self-reflection"]
 
-  - name: "Voice Capture Pipeline"
-    status: complete
-    description: "iOS Voice Memo → iCloud → whisper.cpp local transcription → Claude analysis"
-    tags: ["voice", "automation", "privacy", "local-first"]
-
-  - name: "Genealogy Transcription"
-    status: complete
-    description: "Transcribe and translate genealogical documents with AI"
-    tags: ["genealogy", "ocr", "family-history"]
-
   - name: "Conference Speaking 2026"
     status: active
     description: "Building speaker presence—researching conferences, developing talks, submitting CFPs"
@@ -146,6 +143,22 @@ projects:
     status: active
     description: "Daily monitoring of UL community daemons for inspiration and pattern discovery"
     tags: ["ai", "community", "automation", "daemons"]
+
+  # Completed projects
+  - name: "Voice Interface"
+    status: complete
+    description: "Local text-to-speech with Kokoro/Piper for Claude Code voice output"
+    tags: ["voice", "tts", "local-first", "privacy"]
+
+  - name: "Voice Capture Pipeline"
+    status: complete
+    description: "iOS Voice Memo → iCloud → whisper.cpp local transcription → Claude analysis"
+    tags: ["voice", "automation", "privacy", "local-first"]
+
+  - name: "Genealogy Transcription"
+    status: complete
+    description: "Transcribe and translate genealogical documents with AI"
+    tags: ["genealogy", "ocr", "family-history"]
 
 skills:
   professional:
@@ -164,17 +177,16 @@ skills:
         - "Workflow automation"
       proficiency: expert
 
-  exploratory:
     - domain: "AI Infrastructure"
       specifics:
         - "Claude Code automation"
         - "MCP servers"
         - "Agentic systems"
         - "Local LLM deployment"
-      context: |
-        Building personal AI systems with an experimental, learning-focused approach.
-        Pioneer-builder at the frontier of human-AI collaboration.
+        - "Self-improving AI loops"
+      proficiency: expert
 
+  exploratory:
     - domain: "AI + Security Intersection"
       specifics:
         - "LLM-assisted security operations"
@@ -192,7 +204,7 @@ skills:
         - "Defining 'done' for agentic workflows"
       context: |
         Level 4 of the AI Skill Tree - the missing piece for "trusted overnight autonomy."
-        Strong at exploration (Levels 1-2), building workflows (Level 3), weak at production hardening.
+        Strong at exploration (Levels 1-2), building workflows (Level 3), building toward production hardening.
 
   personal:
     - domain: "Sailing"
@@ -202,6 +214,7 @@ skills:
         - "Small boat seamanship"
         - "Navigation"
         - "Offshore"
+      proficiency: expert
       context: "Building toward offshore racing and expedition sailing"
 
     - domain: "Music"
@@ -286,50 +299,6 @@ recent_posts:
     date: "2025-12-01"
     url: "https://ajvanbeest.com/posts/2025-12-01_Building-my-daemon"
     summary: "The story of building a machine-readable identity API for the AI age, inspired by Daniel Miessler."
-
-current_focus:
-  today: |
-    Updating daemon with 6 weeks of accumulated work. Major developments include
-    session start optimization (60-80% token reduction via pre-computed context),
-    "Defining Done" framework for agentic workflows, and AI Skill Tree assessment.
-
-  this_week:
-    - "Build full done-definition for threat intel monitoring workflow"
-    - "Design /user-define-done skill for repeatable workflow specification"
-    - "Complete AI Skill Tree gap analysis (Level 4 production hardening)"
-    - "Force clarity conversation with Wesley on IC vs leadership path"
-
-  active_projects:
-    - name: "Defining Done Framework"
-      status: "Active exploration - core framework established"
-      next_steps:
-        - "Complete threat intel done-definition as proof of concept"
-        - "Test framework on second workflow (quarterly reports)"
-        - "Build /user-define-done skill"
-
-    - name: "AI Skill Tree"
-      status: "Assessment complete, gap analysis in progress"
-      next_steps:
-        - "Prioritize Level 4 gaps (evaluation harnesses, failure taxonomy)"
-        - "Build production harness for one workflow"
-
-    - name: "Personal Board of Directors"
-      status: "MVP deployed, first audit complete"
-      next_steps:
-        - "Run /user-board setup for full Problem Portfolio"
-        - "Establish quarterly cadence"
-
-    - name: "Session Start Optimization"
-      status: "Complete - deployed"
-      next_steps:
-        - "Monitor token savings in practice"
-
-    - name: "Voice Capture Pipeline"
-      status: "Complete - operational"
-      next_steps:
-        - "Create iOS Shortcut for direct export"
-
-  last_updated: "2026-01-08"
 
 media:
   currently_reading:
