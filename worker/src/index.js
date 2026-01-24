@@ -293,7 +293,7 @@ const landingPage = `<!DOCTYPE html>
   <script>
     async function loadData() {
       try {
-        const [about, identity, adventures, projects, skills, interests, lookingFor, currentFocus] = await Promise.all([
+        const [about, identity, adventures, projects, skills, interests, lookingFor, currentFocus, connect] = await Promise.all([
           fetch('/about').then(r => r.json()),
           fetch('/identity').then(r => r.json()),
           fetch('/adventures').then(r => r.json()),
@@ -301,7 +301,8 @@ const landingPage = `<!DOCTYPE html>
           fetch('/skills').then(r => r.json()),
           fetch('/interests').then(r => r.json()),
           fetch('/looking_for').then(r => r.json()),
-          fetch('/current_focus').then(r => r.json())
+          fetch('/current_focus').then(r => r.json()),
+          fetch('/connect').then(r => r.json())
         ]);
 
         // About
@@ -312,9 +313,9 @@ const landingPage = `<!DOCTYPE html>
             \${about.certifications.map(c => \`<span class="project-tag">\${c}</span>\`).join(' ')}
           </div>
           <div style="margin-top: 1rem;">
-            <a href="\${about.links.github}">GitHub</a> ·
-            <a href="\${about.links.linkedin}">LinkedIn</a> ·
-            <a href="\${about.links.website}">Website</a>
+            <a href="\${connect.github}">GitHub</a> ·
+            <a href="\${connect.linkedin}">LinkedIn</a> ·
+            <a href="\${connect.website}">Website</a>
           </div>
         \`;
 
@@ -651,6 +652,8 @@ const jsonRoutes = {
   '/looking_for': () => publicData.looking_for,
   '/media': () => publicData.media,
   '/current_focus': () => publicData.current_focus,
+  '/connect': () => publicData.connect,
+  '/speaking': () => publicData.speaking,
   '/all': () => ({
     ...publicData,
     _meta: { tier: 'public', generated: new Date().toISOString() },
@@ -701,10 +704,10 @@ ${publicData.about.tagline}
 
 [LINKS]
 
-- Website: ${publicData.about.links.website}
-- GitHub: ${publicData.about.links.github}
-- LinkedIn: ${publicData.about.links.linkedin}
-- Daemon: ${publicData.about.links.daemon}
+- Website: ${publicData.connect.website}
+- GitHub: ${publicData.connect.github}
+- LinkedIn: ${publicData.connect.linkedin}
+- Daemon: ${publicData.connect.daemon}
 
 [MCP_ENDPOINT]
 
