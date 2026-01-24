@@ -1,7 +1,7 @@
 # Daemon Public Tier Data
 # This data is queryable by anyone without authentication
 #
-# Last Updated: 2026-01-17
+# Last Updated: 2026-01-24
 # Section order: Focus → Skills → About → Looking For → Projects → Interests → Identity → Adventures → Connect
 
 current_focus:
@@ -115,7 +115,7 @@ looking_for:
 
   - type: "Conference Speaking"
     description: "Actively submitting to 2026 conferences on AI infrastructure and agentic security"
-    context: "First CFP submitted to DaemonCon. Targeting BSides312, GrrCON, and national AI conferences"
+    context: "Presented at DaemonCon (Jan 2026). Targeting BSides312, Unprompted, GrrCON, and national AI conferences"
 
   - type: "Collaboration"
     description: "Others building personal AI infrastructure or daemon-like systems"
@@ -124,6 +124,31 @@ looking_for:
   - type: "Sailing Community"
     description: "Connections for Watertribe-style adventure sailing"
     context: "Building toward Everglades Challenge 2028 and R2AK 2030"
+
+speaking:
+  conferences:
+    - event: "DaemonCon"
+      location: "DePaul University, Chicago"
+      date: "2026-01-23"
+      role: "Speaker"
+      talk_title: "Agentic Threat Intel: Building an AI-Powered Intelligence Pipeline"
+      presentation_url: "https://github.com/theaj42/presentations/tree/main/Agentic_Threat_Intel"
+      tags: ["ai", "security", "threat-intelligence", "agentic-systems"]
+      status: "completed"
+
+  upcoming:
+    - event: "BSides Chicago 312"
+      status: "CFP pending"
+      target_date: "2026"
+    - event: "Unprompted"
+      status: "CFP pending"
+      target_date: "2026"
+
+  interests:
+    - "AI infrastructure and agentic security"
+    - "Building production-ready AI systems"
+    - "Self-improving AI loops"
+    - "Privacy-first AI deployment"
 
 projects:
   # Active projects
