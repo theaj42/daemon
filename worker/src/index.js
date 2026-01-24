@@ -230,8 +230,38 @@ const landingPage = `<!DOCTYPE html>
     </header>
 
     <section id="live-data">
+      <h2>Current Focus</h2>
+      <div id="current-focus">
+        <p class="loading">Loading...</p>
+      </div>
+
+      <h2>Skills</h2>
+      <div class="section-grid" id="skills-grid">
+        <p class="loading">Loading...</p>
+      </div>
+
       <h2>About</h2>
       <div class="card" id="about-card">
+        <p class="loading">Loading...</p>
+      </div>
+
+      <h2>Looking For</h2>
+      <div id="looking-for-list">
+        <p class="loading">Loading...</p>
+      </div>
+
+      <h2>Speaking</h2>
+      <div id="speaking-section">
+        <p class="loading">Loading...</p>
+      </div>
+
+      <h2>Projects</h2>
+      <div id="projects-list">
+        <p class="loading">Loading...</p>
+      </div>
+
+      <h2>Interests</h2>
+      <div id="interests-list">
         <p class="loading">Loading...</p>
       </div>
 
@@ -242,31 +272,6 @@ const landingPage = `<!DOCTYPE html>
 
       <h2>Adventures</h2>
       <div id="adventures-section">
-        <p class="loading">Loading...</p>
-      </div>
-
-      <h2>Current Projects</h2>
-      <div id="projects-list">
-        <p class="loading">Loading...</p>
-      </div>
-
-      <h2>Skills</h2>
-      <div class="section-grid" id="skills-grid">
-        <p class="loading">Loading...</p>
-      </div>
-
-      <h2>Interests</h2>
-      <div id="interests-list">
-        <p class="loading">Loading...</p>
-      </div>
-
-      <h2>Looking For</h2>
-      <div id="looking-for-list">
-        <p class="loading">Loading...</p>
-      </div>
-
-      <h2>Current Focus</h2>
-      <div id="current-focus">
         <p class="loading">Loading...</p>
       </div>
     </section>
@@ -293,7 +298,7 @@ const landingPage = `<!DOCTYPE html>
   <script>
     async function loadData() {
       try {
-        const [about, identity, adventures, projects, skills, interests, lookingFor, currentFocus, connect] = await Promise.all([
+        const [about, identity, adventures, projects, skills, interests, lookingFor, currentFocus, connect, speaking] = await Promise.all([
           fetch('/about').then(r => r.json()),
           fetch('/identity').then(r => r.json()),
           fetch('/adventures').then(r => r.json()),
@@ -302,7 +307,8 @@ const landingPage = `<!DOCTYPE html>
           fetch('/interests').then(r => r.json()),
           fetch('/looking_for').then(r => r.json()),
           fetch('/current_focus').then(r => r.json()),
-          fetch('/connect').then(r => r.json())
+          fetch('/connect').then(r => r.json()),
+          fetch('/speaking').then(r => r.json())
         ]);
 
         // About
@@ -406,6 +412,34 @@ const landingPage = `<!DOCTYPE html>
             <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">\${l.context}</p>
           </div>
         \`).join('');
+
+        // Speaking
+        document.getElementById('speaking-section').innerHTML = \`
+          <h3>Conferences</h3>
+          \${speaking.conferences.map(c => \`
+            <div class="card">
+              <div class="card-title">\${c.event} - \${c.location}</div>
+              <p style="color: var(--aqua);">\${c.talk_title}</p>
+              <p style="color: var(--gray); font-size: 0.9rem; margin-top: 0.5rem;">\${c.date} · \${c.role}</p>
+              <div style="margin-top: 0.5rem;">
+                \${c.tags.map(t => \`<span class="project-tag">\${t}</span>\`).join(' ')}
+              </div>
+              <p style="margin-top: 0.5rem;"><a href="\${c.presentation_url}">View Presentation</a></p>
+            </div>
+          \`).join('')}
+          <h3>Upcoming</h3>
+          \${speaking.upcoming.map(u => \`
+            <div class="card" style="background: var(--bg1);">
+              <div class="card-title">\${u.event}</div>
+              <p style="color: var(--yellow);">\${u.status}</p>
+              \${u.target_date ? \`<p style="color: var(--gray); font-size: 0.9rem;">Target: \${u.target_date}</p>\` : ''}
+            </div>
+          \`).join('')}
+          <h3>Speaking Interests</h3>
+          <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
+            \${speaking.interests.map(i => \`<li style="color: var(--fg); margin: 0.3rem 0;">\${i}</li>\`).join('')}
+          </ul>
+        \`;
 
         // Current Focus
         document.getElementById('current-focus').innerHTML = \`
