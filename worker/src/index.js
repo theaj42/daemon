@@ -664,7 +664,11 @@ function jsonResponse(data, status = 200) {
 function htmlResponse(html, status = 200) {
   return new Response(html, {
     status,
-    headers: { 'Content-Type': 'text/html', ...corsHeaders },
+    headers: {
+      'Content-Type': 'text/html',
+      'Cache-Control': 'public, max-age=300', // 5 minute cache
+      ...corsHeaders
+    },
   });
 }
 
