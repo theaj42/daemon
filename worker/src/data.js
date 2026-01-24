@@ -1,18 +1,106 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2026-01-10T23:31:21.557Z
+// Generated: 2026-01-24T19:32:59.406Z
 
 export const publicData = {
+  "current_focus": {
+    "today": "PAI pattern adoption complete—built verification checkpoints, hooks system,\nand learning signals infrastructure. ChromaDB collection fix deployed.\nSecurity audits identified 4 HIGH RISK agents.\n",
+    "this_week": [
+      "Review security audit findings and implement context isolation",
+      "Test new hooks system for automatic signal capture",
+      "Continue conference CFP submissions"
+    ],
+    "last_updated": "2026-01-17"
+  },
+  "skills": {
+    "professional": [
+      {
+        "domain": "Security Operations",
+        "specifics": [
+          "Vulnerability management",
+          "SIEM administration and tuning",
+          "Security automation",
+          "Penetration testing"
+        ],
+        "proficiency": "expert"
+      },
+      {
+        "domain": "Automation & Integration",
+        "specifics": [
+          "Python scripting",
+          "API integration",
+          "Workflow automation"
+        ],
+        "proficiency": "expert"
+      },
+      {
+        "domain": "AI Infrastructure",
+        "specifics": [
+          "Claude Code automation",
+          "MCP servers",
+          "Agentic systems",
+          "Local LLM deployment",
+          "Self-improving AI loops"
+        ],
+        "proficiency": "expert"
+      }
+    ],
+    "exploratory": [
+      {
+        "domain": "AI + Security Intersection",
+        "specifics": [
+          "LLM-assisted security operations",
+          "Automated threat analysis",
+          "AI-powered vulnerability triage"
+        ],
+        "context": "Exploring how AI can augment security work. Professional security background\nmeets personal AI experimentation.\n"
+      },
+      {
+        "domain": "AI Production Hardening",
+        "specifics": [
+          "Evaluation harnesses and golden sets",
+          "Failure mode taxonomy",
+          "Pre-ship feedback loops",
+          "Defining 'done' for agentic workflows"
+        ],
+        "context": "Level 4 of the AI Skill Tree - the missing piece for \"trusted overnight autonomy.\"\nStrong at exploration (Levels 1-2), building workflows (Level 3), building toward production hardening.\n"
+      }
+    ],
+    "personal": [
+      {
+        "domain": "Sailing",
+        "specifics": [
+          "Dinghy cruising",
+          "Keel boat cruising",
+          "Small boat seamanship",
+          "Navigation",
+          "Offshore"
+        ],
+        "proficiency": "expert",
+        "context": "Building toward offshore racing and expedition sailing"
+      },
+      {
+        "domain": "Music",
+        "specifics": [
+          "Saxophone (jazz)",
+          "Improvisation"
+        ],
+        "context": "Recovering from 8-year hiatus"
+      },
+      {
+        "domain": "Craftsmanship",
+        "specifics": [
+          "Boat maintenance and restoration",
+          "Physical making/building"
+        ],
+        "context": "Physical creation provides essential balance to digital work"
+      }
+    ]
+  },
   "about": {
     "name": "A.J. Van Beest",
     "tagline": "Builder. Explorer. Improver of things.",
     "bio": "I'm someone who improves things—not out of perfectionism, but because\nrefinement is how I engage with the world. Whether sailing, cooking,\nplaying music, or building systems, I'm always asking: how can this be better?\n\nI value precision in language and beauty in expression. I'm drawn to harder\npaths because they're more interesting. I make decisions intuitively, then\nfind data to support what I already know.\n\nProfessionally, I work in security and automation. Personally, I'm a sailor,\na musician (sax), a father, a partner, and someone trying to balance\nholding the ground for my people while still finding adventure.\n",
-    "links": {
-      "website": "https://ajvanbeest.com",
-      "github": "https://github.com/theaj42",
-      "linkedin": "https://linkedin.com/in/ajvanbeest",
-      "daemon": "https://daemon.ajvanbeest.com"
-    },
     "certifications": [
       "CISSP",
       "GWAPT (GIAC Web Application Penetration Tester)",
@@ -20,56 +108,64 @@ export const publicData = {
       "GSEC (GIAC Security Essentials)"
     ]
   },
-  "identity": {
-    "core_statement": "I'm loyal and seek loyalty in return. I'm energized by groups but find my\ndeepest connections with individuals traveling similar paths—people who can\ndive into serious intellectual exploration and then go play in the dirt together.\n",
-    "missions": [
-      "Hold the ground for my people so they can pursue their dreams",
-      "Engage fully with the natural world through adventure",
-      "Build authentic, honest, joyful connections with family, friends, and community"
-    ],
-    "values": [
-      "Social justice",
-      "Equality",
-      "Wilderness",
-      "Environmentalism",
-      "Artisanry",
-      "Competence"
-    ],
-    "beliefs": [
-      "People are more important than money, corporations, computers, pretty much everything else",
-      "Sometimes the only way through is through—fear can be a marker of growth",
-      "We define 'success' for ourselves",
-      "It's okay to take a break. What's important is that I begin again",
-      "Physical adventure is a gateway to deeper understanding of ourselves",
-      "Personal AI systems should augment natural workflows, not replace them",
-      "Done isn't just produced output—it's proved coverage and showed work"
-    ]
-  },
-  "adventures": {
-    "sailing": {
-      "current_boat": "Merit (Drascombe Lugger)",
-      "status": "Preparing for 2026 launch",
-      "dreams": [
-        {
-          "goal": "Watertribe Everglades Challenge",
-          "target": 2028
-        },
-        {
-          "goal": "Race to Alaska (R2AK)",
-          "target": 2030
-        }
-      ],
-      "philosophy": "Sailing provides enforced presence—temporary relief from the optimization\nmindset. Solitude, physical reality, mastery pursuit, and enforced unplugging.\n"
+  "looking_for": [
+    {
+      "type": "Kindred Spirits",
+      "description": "People who can dive into serious intellectual exploration and then go play in the dirt together",
+      "context": "Loyal connections with individuals traveling similar paths"
     },
-    "exploration": [
-      "France—exploring places we might like to live",
-      "Wilderness time (consistently needed, often deferred)",
-      "Taking harder paths because they're more interesting"
-    ],
-    "music": {
-      "instrument": "Saxophone (dormant 8+ years, recovering)",
-      "status": "Goal: recover sax and start playing again"
+    {
+      "type": "Conference Speaking",
+      "description": "Actively submitting to 2026 conferences on AI infrastructure and agentic security",
+      "context": "Presented at DaemonCon (Jan 2026). Targeting BSides312, Unprompted, GrrCON, and national AI conferences"
+    },
+    {
+      "type": "Collaboration",
+      "description": "Others building personal AI infrastructure or daemon-like systems",
+      "context": "Interested in connecting with the small community exploring these ideas"
+    },
+    {
+      "type": "Sailing Community",
+      "description": "Connections for Watertribe-style adventure sailing",
+      "context": "Building toward Everglades Challenge 2028 and R2AK 2030"
     }
+  ],
+  "speaking": {
+    "conferences": [
+      {
+        "event": "DaemonCon",
+        "location": "DePaul University, Chicago",
+        "date": "2026-01-23",
+        "role": "Speaker",
+        "talk_title": "Agentic Threat Intel: Building an AI-Powered Intelligence Pipeline",
+        "presentation_url": "https://github.com/theaj42/presentations/tree/main/Agentic_Threat_Intel",
+        "tags": [
+          "ai",
+          "security",
+          "threat-intelligence",
+          "agentic-systems"
+        ],
+        "status": "completed"
+      }
+    ],
+    "upcoming": [
+      {
+        "event": "BSides Chicago 312",
+        "status": "CFP pending",
+        "target_date": "2026"
+      },
+      {
+        "event": "Unprompted",
+        "status": "CFP pending",
+        "target_date": "2026"
+      }
+    ],
+    "interests": [
+      "AI infrastructure and agentic security",
+      "Building production-ready AI systems",
+      "Self-improving AI loops",
+      "Privacy-first AI deployment"
+    ]
   },
   "projects": [
     {
@@ -94,17 +190,6 @@ export const publicData = {
         "cloudflare"
       ],
       "url": "https://github.com/theaj42/daemon"
-    },
-    {
-      "name": "Voice Interface",
-      "status": "complete",
-      "description": "Local text-to-speech with Kokoro/Piper for Claude Code voice output",
-      "tags": [
-        "voice",
-        "tts",
-        "local-first",
-        "privacy"
-      ]
     },
     {
       "name": "Morning Pages Automation",
@@ -158,27 +243,6 @@ export const publicData = {
       ]
     },
     {
-      "name": "Voice Capture Pipeline",
-      "status": "complete",
-      "description": "iOS Voice Memo → iCloud → whisper.cpp local transcription → Claude analysis",
-      "tags": [
-        "voice",
-        "automation",
-        "privacy",
-        "local-first"
-      ]
-    },
-    {
-      "name": "Genealogy Transcription",
-      "status": "complete",
-      "description": "Transcribe and translate genealogical documents with AI",
-      "tags": [
-        "genealogy",
-        "ocr",
-        "family-history"
-      ]
-    },
-    {
       "name": "Conference Speaking 2026",
       "status": "active",
       "description": "Building speaker presence—researching conferences, developing talks, submitting CFPs",
@@ -200,91 +264,40 @@ export const publicData = {
         "automation",
         "daemons"
       ]
+    },
+    {
+      "name": "Voice Interface",
+      "status": "complete",
+      "description": "Local text-to-speech with Kokoro/Piper for Claude Code voice output",
+      "tags": [
+        "voice",
+        "tts",
+        "local-first",
+        "privacy"
+      ]
+    },
+    {
+      "name": "Voice Capture Pipeline",
+      "status": "complete",
+      "description": "iOS Voice Memo → iCloud → whisper.cpp local transcription → Claude analysis",
+      "tags": [
+        "voice",
+        "automation",
+        "privacy",
+        "local-first"
+      ]
+    },
+    {
+      "name": "Genealogy Transcription",
+      "status": "complete",
+      "description": "Transcribe and translate genealogical documents with AI",
+      "tags": [
+        "genealogy",
+        "ocr",
+        "family-history"
+      ]
     }
   ],
-  "skills": {
-    "professional": [
-      {
-        "domain": "Security Operations",
-        "specifics": [
-          "Vulnerability management",
-          "SIEM administration and tuning",
-          "Security automation",
-          "Penetration testing"
-        ],
-        "proficiency": "expert"
-      },
-      {
-        "domain": "Automation & Integration",
-        "specifics": [
-          "Python scripting",
-          "API integration",
-          "Workflow automation"
-        ],
-        "proficiency": "expert"
-      }
-    ],
-    "exploratory": [
-      {
-        "domain": "AI Infrastructure",
-        "specifics": [
-          "Claude Code automation",
-          "MCP servers",
-          "Agentic systems",
-          "Local LLM deployment"
-        ],
-        "context": "Building personal AI systems with an experimental, learning-focused approach.\nPioneer-builder at the frontier of human-AI collaboration.\n"
-      },
-      {
-        "domain": "AI + Security Intersection",
-        "specifics": [
-          "LLM-assisted security operations",
-          "Automated threat analysis",
-          "AI-powered vulnerability triage"
-        ],
-        "context": "Exploring how AI can augment security work. Professional security background\nmeets personal AI experimentation.\n"
-      },
-      {
-        "domain": "AI Production Hardening",
-        "specifics": [
-          "Evaluation harnesses and golden sets",
-          "Failure mode taxonomy",
-          "Pre-ship feedback loops",
-          "Defining 'done' for agentic workflows"
-        ],
-        "context": "Level 4 of the AI Skill Tree - the missing piece for \"trusted overnight autonomy.\"\nStrong at exploration (Levels 1-2), building workflows (Level 3), weak at production hardening.\n"
-      }
-    ],
-    "personal": [
-      {
-        "domain": "Sailing",
-        "specifics": [
-          "Dinghy cruising",
-          "Keel boat cruising",
-          "Small boat seamanship",
-          "Navigation",
-          "Offshore"
-        ],
-        "context": "Building toward offshore racing and expedition sailing"
-      },
-      {
-        "domain": "Music",
-        "specifics": [
-          "Saxophone (jazz)",
-          "Improvisation"
-        ],
-        "context": "Recovering from 8-year hiatus"
-      },
-      {
-        "domain": "Craftsmanship",
-        "specifics": [
-          "Boat maintenance and restoration",
-          "Physical making/building"
-        ],
-        "context": "Physical creation provides essential balance to digital work"
-      }
-    ]
-  },
   "interests": [
     {
       "topic": "Human-AI Collaboration",
@@ -368,28 +381,64 @@ export const publicData = {
       ]
     }
   ],
-  "looking_for": [
-    {
-      "type": "Kindred Spirits",
-      "description": "People who can dive into serious intellectual exploration and then go play in the dirt together",
-      "context": "Loyal connections with individuals traveling similar paths"
+  "identity": {
+    "core_statement": "I'm loyal and seek loyalty in return. I'm energized by groups but find my\ndeepest connections with individuals traveling similar paths—people who can\ndive into serious intellectual exploration and then go play in the dirt together.\n",
+    "missions": [
+      "Hold the ground for my people so they can pursue their dreams",
+      "Engage fully with the natural world through adventure",
+      "Build authentic, honest, joyful connections with family, friends, and community"
+    ],
+    "values": [
+      "Social justice",
+      "Equality",
+      "Wilderness",
+      "Environmentalism",
+      "Artisanry",
+      "Competence"
+    ],
+    "beliefs": [
+      "People are more important than money, corporations, computers, pretty much everything else",
+      "Sometimes the only way through is through—fear can be a marker of growth",
+      "We define 'success' for ourselves",
+      "It's okay to take a break. What's important is that I begin again",
+      "Physical adventure is a gateway to deeper understanding of ourselves",
+      "Personal AI systems should augment natural workflows, not replace them",
+      "Done isn't just produced output—it's proved coverage and showed work"
+    ]
+  },
+  "adventures": {
+    "sailing": {
+      "current_boat": "Merit (Drascombe Lugger)",
+      "status": "Preparing for 2026 launch",
+      "dreams": [
+        {
+          "goal": "Watertribe Everglades Challenge",
+          "target": 2028
+        },
+        {
+          "goal": "Race to Alaska (R2AK)",
+          "target": 2030
+        }
+      ],
+      "philosophy": "Sailing provides enforced presence—temporary relief from the optimization\nmindset. Solitude, physical reality, mastery pursuit, and enforced unplugging.\n"
     },
-    {
-      "type": "Conference Speaking",
-      "description": "Actively submitting to 2026 conferences on AI infrastructure and agentic security",
-      "context": "First CFP submitted to DaemonCon. Targeting BSides312, GrrCON, and national AI conferences"
-    },
-    {
-      "type": "Collaboration",
-      "description": "Others building personal AI infrastructure or daemon-like systems",
-      "context": "Interested in connecting with the small community exploring these ideas"
-    },
-    {
-      "type": "Sailing Community",
-      "description": "Connections for Watertribe-style adventure sailing",
-      "context": "Building toward Everglades Challenge 2028 and R2AK 2030"
+    "exploration": [
+      "France—exploring places we might like to live",
+      "Wilderness time (consistently needed, often deferred)",
+      "Taking harder paths because they're more interesting"
+    ],
+    "music": {
+      "instrument": "Saxophone (dormant 8+ years, recovering)",
+      "status": "Goal: recover sax and start playing again"
     }
-  ],
+  },
+  "connect": {
+    "website": "https://ajvanbeest.com",
+    "github": "https://github.com/theaj42",
+    "linkedin": "https://linkedin.com/in/ajvanbeest",
+    "email": "ajvanbeest@protonmail.com",
+    "daemon": "https://daemon.ajvanbeest.com"
+  },
   "mentions": [
     {
       "source": "tasks-ng INSPIRATION.md",
@@ -412,57 +461,6 @@ export const publicData = {
       "summary": "The story of building a machine-readable identity API for the AI age, inspired by Daniel Miessler."
     }
   ],
-  "current_focus": {
-    "today": "Updating daemon with 6 weeks of accumulated work. Major developments include\nsession start optimization (60-80% token reduction via pre-computed context),\n\"Defining Done\" framework for agentic workflows, and AI Skill Tree assessment.\n",
-    "this_week": [
-      "Build full done-definition for threat intel monitoring workflow",
-      "Design /user-define-done skill for repeatable workflow specification",
-      "Complete AI Skill Tree gap analysis (Level 4 production hardening)",
-      "Force clarity conversation with Wesley on IC vs leadership path"
-    ],
-    "active_projects": [
-      {
-        "name": "Defining Done Framework",
-        "status": "Active exploration - core framework established",
-        "next_steps": [
-          "Complete threat intel done-definition as proof of concept",
-          "Test framework on second workflow (quarterly reports)",
-          "Build /user-define-done skill"
-        ]
-      },
-      {
-        "name": "AI Skill Tree",
-        "status": "Assessment complete, gap analysis in progress",
-        "next_steps": [
-          "Prioritize Level 4 gaps (evaluation harnesses, failure taxonomy)",
-          "Build production harness for one workflow"
-        ]
-      },
-      {
-        "name": "Personal Board of Directors",
-        "status": "MVP deployed, first audit complete",
-        "next_steps": [
-          "Run /user-board setup for full Problem Portfolio",
-          "Establish quarterly cadence"
-        ]
-      },
-      {
-        "name": "Session Start Optimization",
-        "status": "Complete - deployed",
-        "next_steps": [
-          "Monitor token savings in practice"
-        ]
-      },
-      {
-        "name": "Voice Capture Pipeline",
-        "status": "Complete - operational",
-        "next_steps": [
-          "Create iOS Shortcut for direct export"
-        ]
-      }
-    ],
-    "last_updated": "2026-01-08"
-  },
   "media": {
     "currently_reading": [
       {
