@@ -451,14 +451,16 @@ const landingPage = `<!DOCTYPE html>
           <ul style="padding-left: 1.5rem; margin: 0.5rem 0;">
             \${currentFocus.this_week.map(item => \`<li style="color: var(--fg); margin: 0.3rem 0;">\${item}</li>\`).join('')}
           </ul>
-          <h3>Active Projects</h3>
-          \${currentFocus.active_projects.map(p => \`
-            <div class="card" style="margin: 0.5rem 0;">
-              <div class="card-title">\${p.name}</div>
-              <p style="color: var(--gray);">\${p.status}</p>
-              \${p.next_steps ? \`<ul style="padding-left: 1.2rem; margin-top: 0.5rem;">\${p.next_steps.map(s => \`<li style="color: var(--fg); font-size: 0.9rem;">\${s}</li>\`).join('')}</ul>\` : ''}
-            </div>
-          \`).join('')}
+          \${currentFocus.active_projects ? \`
+            <h3>Active Projects</h3>
+            \${currentFocus.active_projects.map(p => \`
+              <div class="card" style="margin: 0.5rem 0;">
+                <div class="card-title">\${p.name}</div>
+                <p style="color: var(--gray);">\${p.status}</p>
+                \${p.next_steps ? \`<ul style="padding-left: 1.2rem; margin-top: 0.5rem;">\${p.next_steps.map(s => \`<li style="color: var(--fg); font-size: 0.9rem;">\${s}</li>\`).join('')}</ul>\` : ''}
+              </div>
+            \`).join('')}
+          \` : ''}
           <p style="color: var(--gray); font-size: 0.8rem; margin-top: 1rem;">Last updated: \${currentFocus.last_updated}</p>
         \`;
 
