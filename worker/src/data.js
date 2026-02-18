@@ -1,16 +1,16 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2026-01-24T19:32:59.406Z
+// Generated: 2026-02-18T16:10:59.789Z
 
 export const publicData = {
   "current_focus": {
-    "today": "PAI pattern adoption complete—built verification checkpoints, hooks system,\nand learning signals infrastructure. ChromaDB collection fix deployed.\nSecurity audits identified 4 HIGH RISK agents.\n",
+    "today": "Building agent evaluation framework for agentic workflow reliability scoring.\nComprehensive daemon update skill for multi-section publishing.\n",
     "this_week": [
-      "Review security audit findings and implement context isolation",
-      "Test new hooks system for automatic signal capture",
-      "Continue conference CFP submissions"
+      "Building agent evaluation framework with validator, reliability scoring, and CLI",
+      "Unified personal email system with custom MCP servers",
+      "BSides312 CFP submission approaching (Feb 28 deadline)"
     ],
-    "last_updated": "2026-01-17"
+    "last_updated": "2026-02-18"
   },
   "skills": {
     "professional": [
@@ -152,12 +152,8 @@ export const publicData = {
       {
         "event": "BSides Chicago 312",
         "status": "CFP pending",
-        "target_date": "2026"
-      },
-      {
-        "event": "Unprompted",
-        "status": "CFP pending",
-        "target_date": "2026"
+        "target_date": "2026",
+        "cfp_deadline": "2026-02-28"
       }
     ],
     "interests": [
@@ -255,6 +251,28 @@ export const publicData = {
       ]
     },
     {
+      "name": "Agent Evaluation Framework",
+      "status": "active",
+      "description": "Evaluation harness for agentic workflows: validator, reliability scoring, proof-of-work, CLI",
+      "tags": [
+        "ai",
+        "evaluation",
+        "reliability",
+        "production"
+      ]
+    },
+    {
+      "name": "Document Person Extractor",
+      "status": "active",
+      "description": "Flask app with AI for extracting people from historical documents",
+      "tags": [
+        "ai",
+        "genealogy",
+        "ocr",
+        "flask"
+      ]
+    },
+    {
       "name": "Daemon Watch",
       "status": "active",
       "description": "Daily monitoring of UL community daemons for inspiration and pattern discovery",
@@ -263,6 +281,16 @@ export const publicData = {
         "community",
         "automation",
         "daemons"
+      ]
+    },
+    {
+      "name": "Fast Start System",
+      "status": "complete",
+      "description": "Non-blocking session initialization with background context loading (<3 sec)",
+      "tags": [
+        "ai",
+        "performance",
+        "workflow"
       ]
     },
     {

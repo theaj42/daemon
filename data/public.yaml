@@ -1,19 +1,18 @@
 # Daemon Public Tier Data
 # This data is queryable by anyone without authentication
 #
-# Last Updated: 2026-01-24
+# Last Updated: 2026-02-18
 # Section order: Focus → Skills → About → Looking For → Projects → Interests → Identity → Adventures → Connect
 
 current_focus:
   today: |
-    PAI pattern adoption complete—built verification checkpoints, hooks system,
-    and learning signals infrastructure. ChromaDB collection fix deployed.
-    Security audits identified 4 HIGH RISK agents.
+    Building agent evaluation framework for agentic workflow reliability scoring.
+    Comprehensive daemon update skill for multi-section publishing.
   this_week:
-    - "Review security audit findings and implement context isolation"
-    - "Test new hooks system for automatic signal capture"
-    - "Continue conference CFP submissions"
-  last_updated: "2026-01-17"
+    - "Building agent evaluation framework with validator, reliability scoring, and CLI"
+    - "Unified personal email system with custom MCP servers"
+    - "BSides312 CFP submission approaching (Feb 28 deadline)"
+  last_updated: "2026-02-18"
 
 skills:
   professional:
@@ -140,9 +139,7 @@ speaking:
     - event: "BSides Chicago 312"
       status: "CFP pending"
       target_date: "2026"
-    - event: "Unprompted"
-      status: "CFP pending"
-      target_date: "2026"
+      cfp_deadline: "2026-02-28"
 
   interests:
     - "AI infrastructure and agentic security"
@@ -193,12 +190,27 @@ projects:
     description: "Building speaker presence—researching conferences, developing talks, submitting CFPs"
     tags: ["speaking", "conferences", "career", "ai", "security"]
 
+  - name: "Agent Evaluation Framework"
+    status: active
+    description: "Evaluation harness for agentic workflows: validator, reliability scoring, proof-of-work, CLI"
+    tags: ["ai", "evaluation", "reliability", "production"]
+
+  - name: "Document Person Extractor"
+    status: active
+    description: "Flask app with AI for extracting people from historical documents"
+    tags: ["ai", "genealogy", "ocr", "flask"]
+
   - name: "Daemon Watch"
     status: active
     description: "Daily monitoring of UL community daemons for inspiration and pattern discovery"
     tags: ["ai", "community", "automation", "daemons"]
 
   # Completed projects
+  - name: "Fast Start System"
+    status: complete
+    description: "Non-blocking session initialization with background context loading (<3 sec)"
+    tags: ["ai", "performance", "workflow"]
+
   - name: "Voice Interface"
     status: complete
     description: "Local text-to-speech with Kokoro/Piper for Claude Code voice output"
