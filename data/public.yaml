@@ -337,6 +337,20 @@ recent_posts:
     url: "https://ajvanbeest.com/posts/2025-12-01_Building-my-daemon"
     summary: "The story of building a machine-readable identity API for the AI age, inspired by Daniel Miessler."
 
+foundational_references:
+  description: "Core essays and videos that have fundamentally shaped AJ's thinking about AI"
+  items:
+    - type: essay
+      title: "AI's Predictable Path: 7 Components"
+      author: "Daniel Miessler"
+      url: "https://danielmiessler.com/blog/ai-predictable-path-7-components-2024"
+      year: 2024
+      relevance: "Foundational framework for understanding how AI systems evolve — informed thinking about ideal state management, agent-native architectures, and business-as-graph concepts"
+
+    - type: video
+      url: "https://youtu.be/6pP8x8sXoaM?si=Op-jhLqzA7Uo7Fe1"
+      relevance: "Current foundational video shaping thinking about AI-native business architecture, data/API separation, and the graph-of-AI-systems model"
+
 media:
   currently_reading:
     # TODO: What are you currently reading?
