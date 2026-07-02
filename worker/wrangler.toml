@@ -16,6 +16,7 @@ DAEMON_VERSION = "1.0.0"
 
 # Trusted tier API key (set via `wrangler secret put TRUSTED_API_KEY`)
 # TRUSTED_API_KEY = "set-via-wrangler-secret"
+# Trusted tier data (set via `wrangler secret put TRUSTED_DATA_JSON`)
 
 # Development settings
 [dev]

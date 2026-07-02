@@ -1,6 +1,6 @@
 // Auto-generated from YAML data files
 // Run 'npm run build-data' to regenerate
-// Generated: 2026-02-18T16:10:59.789Z
+// Generated: 2026-07-02T17:26:34.393Z
 
 export const publicData = {
   "current_focus": {
@@ -489,6 +489,24 @@ export const publicData = {
       "summary": "The story of building a machine-readable identity API for the AI age, inspired by Daniel Miessler."
     }
   ],
+  "foundational_references": {
+    "description": "Core essays and videos that have fundamentally shaped AJ's thinking about AI",
+    "items": [
+      {
+        "type": "essay",
+        "title": "AI's Predictable Path: 7 Components",
+        "author": "Daniel Miessler",
+        "url": "https://danielmiessler.com/blog/ai-predictable-path-7-components-2024",
+        "year": 2024,
+        "relevance": "Foundational framework for understanding how AI systems evolve — informed thinking about ideal state management, agent-native architectures, and business-as-graph concepts"
+      },
+      {
+        "type": "video",
+        "url": "https://youtu.be/6pP8x8sXoaM?si=Op-jhLqzA7Uo7Fe1",
+        "relevance": "Current foundational video shaping thinking about AI-native business architecture, data/API separation, and the graph-of-AI-systems model"
+      }
+    ]
+  },
   "media": {
     "currently_reading": [
       {
@@ -499,117 +517,5 @@ export const publicData = {
     "recently_read": [],
     "currently_watching": [],
     "recently_watched": []
-  }
-};
-
-export const trustedData = {
-  "location": {
-    "region": "Greater Chicago Area",
-    "city": "St. Charles, Illinois",
-    "timezone": "America/Chicago",
-    "travel_status": "home"
-  },
-  "availability": {
-    "open_to_calls": true,
-    "preferred_contact": "email",
-    "best_times": "Weekday mornings (7-10 AM CT) or by appointment",
-    "response_time": "Usually within 24-48 hours"
-  },
-  "projects_detailed": [
-    {
-      "name": "Personal AI Infrastructure",
-      "status": "active - mature and evolving",
-      "description": "Core AI context system with session logging, ChromaDB memory, voice interface,\nmaintenance automation, and multiple specialized agents. Now includes\npre-computed session context, background automation (git sync, morning prep,\nrolling summary updates), and comprehensive maintenance validation.\n",
-      "blockers": [],
-      "recent_progress": "- Streamlined session start (60-80% token reduction)\n- Background automation: git sync every 15min, morning prep at 4am, rolling summary at 1am\n- Google Calendar and Gmail MCP integration\n- Maintenance validation system with pending actions\n- AI Skill Tree assessment (identified Level 4 gaps)\n",
-      "help_wanted": "Feedback on evaluation harness patterns, production hardening approaches"
-    },
-    {
-      "name": "Daemon",
-      "status": "active - content refresh",
-      "description": "Personal API with two-tier access. MVP deployed at daemon.ajvanbeest.com.\nMCP server available for AI discovery.\n",
-      "blockers": [],
-      "recent_progress": "- MCP server created for daemon discovery\n- Content refresh completed Jan 2026\n- Added mentions section, conference speaking project, daemon watch\n- Linked DAEMON header to Miessler's original repo\n",
-      "next_steps": [
-        "Add blog post summaries as new posts are published",
-        "Consider per-user API keys (exploration: 2026-01-25)"
-      ],
-      "help_wanted": null
-    },
-    {
-      "name": "Morning Pages Transcription",
-      "status": "active - stable with Gemini",
-      "description": "Handwritten journal transcription using Gemini 3 Pro via Vertex AI.\nAutomated daily via launchd.\n",
-      "blockers": [],
-      "recent_progress": "- Migrated to Gemini 3 Pro Preview via Vertex AI\n- Fixed section placement and underline formatting\n- Added $10/month hard billing limit with automatic cutoff\n",
-      "help_wanted": null
-    },
-    {
-      "name": "Defining Done Framework",
-      "status": "active - core exploration",
-      "description": "Framework for specifying completion criteria for agentic workflows.\nBased on Nate B. Jones's Ralph Wiggum pattern concepts.\n",
-      "blockers": [],
-      "recent_progress": "- Developed 4-layer framework (coverage, completeness, accuracy, relevance, failure acknowledgment)\n- Applied to threat intel monitoring as first case study\n- Identified key insight: \"Done isn't just produced output—it's proved coverage and showed work\"\n",
-      "help_wanted": "Examples of evaluation harnesses in production AI systems"
-    },
-    {
-      "name": "AI Skill Tree",
-      "status": "active - assessment complete",
-      "description": "4-level maturity framework for AI systems based on Karpathy reflection video.\nLevels: Conditioning → Authority → Workflows → Compounding.\n",
-      "blockers": [],
-      "recent_progress": "- Completed comprehensive 12-node assessment\n- Identified pattern: Strong at Levels 1-2, building Level 3, weak at Level 4\n- Created Dexcom-focused production-ready checklist\n",
-      "help_wanted": null
-    },
-    {
-      "name": "Personal Board of Directors",
-      "status": "active - MVP deployed",
-      "description": "Career governance system inspired by Nate B. Jones. Surfaces avoided decisions,\ntracks problems as assets, runs quarterly audits.\n",
-      "blockers": [],
-      "recent_progress": "- Built /user-board skill with quick/setup/quarterly modes\n- Ran first quick audit - surfaced leadership decision avoidance\n- Created reflections inbox for board-material capture\n",
-      "help_wanted": null
-    },
-    {
-      "name": "Voice Capture Pipeline",
-      "status": "complete - operational",
-      "description": "iOS Voice Memo to Claude analysis pipeline. Local whisper.cpp transcription\nfor privacy and zero ongoing cost.\n",
-      "blockers": [],
-      "recent_progress": "- Built complete pipeline: iOS → iCloud → whisper.cpp → Claude\n- Processed 10+ memos successfully\n- iOS Shortcut for direct export pending\n",
-      "help_wanted": null
-    },
-    {
-      "name": "Conference Speaking 2026",
-      "status": "active - first CFP submitted",
-      "description": "Building speaker presence for 2026. Researching conferences, developing talk\nabstracts, submitting CFPs. Focus on AI infrastructure and agentic security.\n",
-      "blockers": [],
-      "recent_progress": "- Researched 18 conferences (4 security, 3 Midwest AI, 10 national AI, 5 international)\n- Developed two talk concepts: \"Self-Improving AI\" (20-min) and \"Agentic Threat Intel\" (50-min)\n- Submitted first CFP to DaemonCon (DePaul Security Daemons club)\n- Created project folder with README, abstracts, and submission tracker\n",
-      "help_wanted": "Speaking opportunities at AI or security conferences"
-    },
-    {
-      "name": "Daemon Watch",
-      "status": "active - monitoring 2 daemons",
-      "description": "Daily automated monitoring of UL community daemons. Fetches updates via MCP,\ndetects changes, generates morning reports for inspiration and pattern discovery.\n",
-      "blockers": [],
-      "recent_progress": "- Built daemon-watch.py with MCP JSON-RPC fetching\n- Launchd job runs at 04:00 daily\n- Now monitoring: Daniel Miessler + SaltedKeys\n- Integrated into first-session morning routine\n",
-      "help_wanted": null
-    }
-  ],
-  "mentions": [
-    {
-      "source": "tasks-ng INSPIRATION.md",
-      "url": "https://github.com/0xsalt/tasks-ng/blob/main/docs/INSPIRATION.md",
-      "quote": "My goal with that is to provide so much context to my robot that I can simply ask 'Given everything, what should I work on now?' ...and its answer will be right.",
-      "date": "2026-01-10",
-      "context": "Credited as early contributor whose insight shaped the project's direction"
-    }
-  ],
-  "current_focus": {
-    "today": "AI Lab proposal sent to Wesley—awaiting response and scheduling conversation.\nFirst CFP submitted (DaemonCon - Agentic Threat Intel talk for security students).\nConference Speaking 2026 strategy developed with calendar of CFP deadlines.\n",
-    "this_week": [
-      "Wait for Wesley's response on AI Lab proposal",
-      "Jan 28: Decide and submit talk for [un]prompted",
-      "Get Dexcom approval for DaemonCon demo screenshots",
-      "Complete threat intel noise filter definition"
-    ],
-    "last_updated": "2026-01-10"
   }
 };

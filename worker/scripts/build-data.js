@@ -14,9 +14,9 @@ const __dirname = dirname(__filename);
 const dataDir = join(__dirname, '../../data');
 const outputFile = join(__dirname, '../src/data.js');
 
-// Read and parse YAML files
+// Read and parse public YAML data. Trusted-tier data must not be committed to
+// this public repository; provide it at deploy time via TRUSTED_DATA_JSON.
 const publicData = yaml.load(readFileSync(join(dataDir, 'public.yaml'), 'utf8'));
-const trustedData = yaml.load(readFileSync(join(dataDir, 'trusted.yaml'), 'utf8'));
 
 // Generate the JavaScript module
 const output = `// Auto-generated from YAML data files
@@ -24,11 +24,8 @@ const output = `// Auto-generated from YAML data files
 // Generated: ${new Date().toISOString()}
 
 export const publicData = ${JSON.stringify(publicData, null, 2)};
-
-export const trustedData = ${JSON.stringify(trustedData, null, 2)};
 `;
 
 writeFileSync(outputFile, output);
 console.log(`✓ Generated ${outputFile}`);
 console.log(`  - Public data sections: ${Object.keys(publicData).join(', ')}`);
-console.log(`  - Trusted data sections: ${Object.keys(trustedData).join(', ')}`);

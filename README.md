@@ -42,6 +42,16 @@ Trusted Tier (authenticated):
 - **Protocol**: MCP (Model Context Protocol) compatible
 - **Auth**: API key for trusted tier
 
+## Trusted Tier Data
+
+Trusted tier data is intentionally not committed to this public repository.
+Use `data/trusted.example.yaml` as the shape reference, then provide the deployed
+payload through a Cloudflare secret named `TRUSTED_DATA_JSON`.
+
+```bash
+wrangler secret put TRUSTED_DATA_JSON
+```
+
 ## Status
 
 🚧 **In Development** - Building the foundation

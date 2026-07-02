@@ -1,0 +1,23 @@
+# Daemon Trusted Tier Data Example
+# Copy to data/trusted.yaml locally if you want a YAML source of truth, but do
+# not commit the real file. Deploy trusted data through TRUSTED_DATA_JSON.
+
+location:
+  region: "Example Region"
+  city: "Example City"
+  timezone: "America/Chicago"
+  travel_status: home
+
+availability:
+  open_to_calls: false
+  preferred_contact: email
+  best_times: "By appointment"
+  response_time: "Usually within a few days"
+
+projects_detailed:
+  - name: "Example Project"
+    status: "active"
+    description: "Detailed project context for trusted contacts."
+    blockers: []
+    recent_progress: "Recent trusted-tier progress notes."
+    help_wanted: null
