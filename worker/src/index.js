@@ -10,7 +10,7 @@
  * - /api → API documentation
  */
 
-import { publicData, trustedData } from './data.js';
+import { publicData } from './data.js';
 
 // Gruvbox Material Dark color palette
 const colors = {
@@ -681,6 +681,19 @@ function isAuthenticated(request, env) {
   return apiKey && apiKey === env.TRUSTED_API_KEY;
 }
 
+function getTrustedData(env) {
+  if (!env.TRUSTED_DATA_JSON) {
+    return null;
+  }
+
+  try {
+    return JSON.parse(env.TRUSTED_DATA_JSON);
+  } catch (error) {
+    console.error('TRUSTED_DATA_JSON is not valid JSON:', error);
+    return null;
+  }
+}
+
 // Route handlers for JSON endpoints
 const jsonRoutes = {
   '/about': () => publicData.about,
@@ -701,10 +714,10 @@ const jsonRoutes = {
 };
 
 const trustedRoutes = {
-  '/location': () => trustedData.location,
-  '/availability': () => trustedData.availability,
-  '/projects_detailed': () => trustedData.projects_detailed,
-  '/trusted/all': () => ({
+  '/location': (trustedData) => trustedData.location,
+  '/availability': (trustedData) => trustedData.availability,
+  '/projects_detailed': (trustedData) => trustedData.projects_detailed,
+  '/trusted/all': (trustedData) => ({
     public: publicData,
     trusted: trustedData,
     _meta: { tier: 'trusted', generated: new Date().toISOString() },
@@ -785,7 +798,17 @@ mcp-rpc (JSON-RPC 2.0 over HTTPS)
           tier: 'trusted',
         }, 401);
       }
-      return jsonResponse(trustedRoutes[path]());
+
+      const trustedData = getTrustedData(env);
+      if (!trustedData) {
+        return jsonResponse({
+          error: 'Trusted data unavailable',
+          message: 'TRUSTED_DATA_JSON is not configured or is invalid.',
+          tier: 'trusted',
+        }, 503);
+      }
+
+      return jsonResponse(trustedRoutes[path](trustedData));
     }
 
     // 404 for unknown routes
